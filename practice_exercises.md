@@ -4,7 +4,7 @@ title: Practice Exercises
 permalink: /practice/
 ---
 
-Here are some mini-exercises to practice your new Python skills.
+Here are some mini-exercises to practice your new Python skills.  Exercises are in Python 2, but since they're all browser-based you should be able to follow along regardless of what version of Python you use locally.
 
 [Coding Bat](http://codingbat.com/home/bostonpythonworkshop@gmail.com/)
 
