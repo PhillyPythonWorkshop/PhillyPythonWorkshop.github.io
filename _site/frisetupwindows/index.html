@@ -217,7 +217,65 @@ Type "help", "copyright", "credits" or "license" for more information.
 </ul>
 
 <h1 id="practice-navigating-the-computer-from-a-command-prompt">Practice navigating the computer from a command prompt</h1>
-<p>Here is how you practice the command line</p>
+
+<p>The filesystem on your computer is like a tree made up of folders (also called “directories”) and files. The filesystem has a root directory called <code>/</code>, and everything on your computer lives in subdirectories of this root directory.
+We often navigate the filesystem graphically by clicking on graphical folders. We can do the exact same navigation from the command line.
+There are two commands that we’ll be using at a command prompt to navigate the filesystem on your computer:</p>
+
+<p><code>dir</code>
+dir lists the contents of a directory.</p>
+
+<p><code>cd</code>
+cd moves you into a new directory (it stands for “change directory”).</p>
+
+<p>Let’s practice using these commands.</p>
+
+<p>Open a command prompt.</p>
+
+<p>Type each of these commands and hit enter:</p>
+
+<p><code>dir</code>
+<em>This lists all the files in your home directory.</em></p>
+
+<p><code>cd C:\</code>
+<em>This will change you into the C:\ directory.</em></p>
+
+<p><code>dir</code>
+<em>This lists the contents of the C:\ directory.</em></p>
+
+<p><code>cd Users</code>
+<em>This will change you into the Users subdirectory of the C:\ directory.</em></p>
+
+<p><code>dir</code>
+<em>You should see the names of all the files and directories in C:\Users.</em></p>
+
+<p><code>cd ..</code>
+ <em>The two dots mean “parent directory”, so this command moved you up to the parent directory. You were in <code>C:\Users</code>, so now you are in <code>C:\</code>, the root directory.</em></p>
+
+<p><code>dir</code>
+<em>This lists the contents of the current directory (root).</em></p>
+
+<h4 id="tips">Tips</h4>
+
+<p>You can use Tab to auto-complete directory and file names. So from inside the root directory, if you type <code>cd Use</code> and hit Tab, the command prompt will auto-complete the directory name, and you can then hit enter to change into the <code>C:\Users</code> directory.
+The command prompt maintains a command history. You can use the up arrow to cycle through old commands.
+Note that the text that makes up the command prompt changes as you move around directories. The command prompt will always give the full directory path to your current directory.</p>
+
+<h4 id="check-your-understanding">Check your understanding</h4>
+
+<p>Answer these questions. Experiment at the command line if you need to! If you aren’t sure about an answer, ask a helper.</p>
+
+<ul>
+  <li>What directory are you in after starting a new command line prompt?</li>
+  <li>After starting a new command line prompt, how would you get to the root directory?</li>
+  <li>How do you check what files and directories are in your current working directory?</li>
+  <li>If you are in directory <code>C:\Users</code>, and you want to get to <code>C:\Users\PythonWork\projects</code>, how would you do that?</li>
+  <li>What are 2 ways to avoid typing out a full navigation command? (hint: one requires that you’ve run the command before)</li>
+  <li>What is the difference between a command prompt and a Python prompt?</li>
+</ul>
+
+<h4 id="success">Success!</h4>
+<p>You’ve practiced using dir and cd to navigate your computer’s filesystem from the command prompt.</p>
 
 <h1 id="get-dependencies-installed-for-the-projects">Get dependencies installed for the projects</h1>
 <p>Install dependencies</p>

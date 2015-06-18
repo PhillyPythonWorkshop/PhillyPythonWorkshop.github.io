@@ -97,30 +97,6 @@ Exit the Python prompt by typing `exit()` and hitting enter.
 Now you're back at the Windows command prompt `(C:\)`.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Prepare a text editor
 Here is how you set up a text editor.
 
@@ -142,7 +118,82 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 
 #Practice navigating the computer from a command prompt
-Here is how you practice the command line
+
+
+The filesystem on your computer is like a tree made up of folders (also called "directories") and files. The filesystem has a root directory called `/`, and everything on your computer lives in subdirectories of this root directory.
+We often navigate the filesystem graphically by clicking on graphical folders. We can do the exact same navigation from the command line.
+There are two commands that we'll be using at a command prompt to navigate the filesystem on your computer:
+
+`dir`
+dir lists the contents of a directory.
+
+`cd`
+cd moves you into a new directory (it stands for "change directory").
+
+Let's practice using these commands.
+
+Open a command prompt.
+
+Type each of these commands and hit enter:
+
+`dir`
+*This lists all the files in your home directory.*
+
+`cd C:\`
+*This will change you into the C:\ directory.*
+
+`dir`
+*This lists the contents of the C:\ directory.*
+
+`cd Users`
+*This will change you into the Users subdirectory of the C:\ directory.*
+
+`dir`
+*You should see the names of all the files and directories in C:\Users.*
+
+`cd ..`
+ *The two dots mean "parent directory", so this command moved you up to the parent directory. You were in `C:\Users`, so now you are in `C:\`, the root directory.*
+
+`dir`
+*This lists the contents of the current directory (root).*
+
+####Tips
+
+You can use Tab to auto-complete directory and file names. So from inside the root directory, if you type `cd Use` and hit Tab, the command prompt will auto-complete the directory name, and you can then hit enter to change into the `C:\Users` directory.
+The command prompt maintains a command history. You can use the up arrow to cycle through old commands.
+Note that the text that makes up the command prompt changes as you move around directories. The command prompt will always give the full directory path to your current directory.
+
+####Check your understanding
+
+Answer these questions. Experiment at the command line if you need to! If you aren't sure about an answer, ask a helper.
+
+* What directory are you in after starting a new command line prompt?
+* After starting a new command line prompt, how would you get to the root directory?
+* How do you check what files and directories are in your current working directory?
+* If you are in directory `C:\Users`, and you want to get to `C:\Users\PythonWork\projects`, how would you do that?
+* What are 2 ways to avoid typing out a full navigation command? (hint: one requires that you've run the command before)
+* What is the difference between a command prompt and a Python prompt?
+
+#### Success!
+You've practiced using dir and cd to navigate your computer's filesystem from the command prompt.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #Get dependencies installed for the projects
 Install dependencies
