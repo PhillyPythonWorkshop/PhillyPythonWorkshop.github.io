@@ -40,7 +40,7 @@ You just started Python! The `>>>` indicates that you are at a new type of promp
 
 # Put Python on the Windows PATH
 
-You might have noticed that you typed a "full path" to the Python application above when launching Python (python.exe is the application, but we typed \Python34\python.exe). In this step, you will configure your computer so that you can run Python without typing the Python27 directory name.
+You might have noticed that you typed a "full path" to the Python application above when launching Python (python.exe is the application, but we typed \Python34\python.exe). In this step, you will configure your computer so that you can run Python without typing the Python34 directory name.
 
 #### Get to System Properties
 
