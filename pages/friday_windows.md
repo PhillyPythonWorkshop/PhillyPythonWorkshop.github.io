@@ -177,26 +177,11 @@ Answer these questions. Experiment at the command line if you need to! If you ar
 #### Success!
 You've practiced using dir and cd to navigate your computer's filesystem from the command prompt.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Get dependencies installed for the projects
-Install dependencies
+
+Download the [Wordplay Project](https://github.com/PhillyPythonWorkshop/Wordplay/archive/master.zip).
+
+Download the [Colorwall Project](https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip) for Python 3.  
 
 #Practice with Coding Bat
 Coding Bat practice
