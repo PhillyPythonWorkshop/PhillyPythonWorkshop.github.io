@@ -6,7 +6,7 @@ permalink: /frisetupwindows/
 
 Here's what you need to do to set up your Windows machine.
 
-#Install Python
+#Download and Install Python
 If you already think you have Python 3 installed, please check with a staff member before completing these instructions.
 
 1.  Click on [this download link](https://www.python.org/ftp/python/3.4.3/python-3.4.3.msi) and choose "run" if you have the option to do so. Otherwise, save it to your computer and double click to start the installer.  Follow the instructions to complete the installation.
@@ -31,12 +31,89 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-You just started Python! The >>> indicates that you are at a new type of prompt -- a Python prompt. The command prompt lets you navigate your computer and run programs, and the Python prompt lets you write and run Python code interactively.
+You just started Python! The `>>>` indicates that you are at a new type of prompt -- a Python prompt. The command prompt lets you navigate your computer and run programs, and the Python prompt lets you write and run Python code interactively.
 
   * If the number after Python is not 3 or greater, please tell an instructor or assistant.
 
 
 4. To exit the Python shell, type `exit()` and hit enter.  You'll now be back at the Windows command prompt (the `C:\` that you saw earlier).
+
+# Put Python on the Windows PATH
+
+You might have noticed that you typed a "full path" to the Python application above when launching Python (python.exe is the application, but we typed \Python34\python.exe). In this step, you will configure your computer so that you can run Python without typing the Python27 directory name.
+
+#### Get to System Properties
+
+##### Windows 8
+
+> Search for your "Control Panel" and open it.
+> Select the "system" icon. A window labeled "View basic information about your computer" will appear.
+> In this window, click "Advanced system settings" and follow the steps below for all versions of Windows.
+
+##### Windows 7 or Vista
+
+> Open up "Computer"  by clicking on the Start menu or the Windows logo in the lower-left hand corner, and navigate to "Computer."
+> ''Right-click'' on the empty space in the window, and choose ''Properties''. A window labeled "View basic information about your computer" will appear.
+> In this window, click "Advanced system settings" and follow the steps below for all versions of Windows.
+
+##### Windows XP
+ 
+> Open up "My Computer"  by clicking on the Start menu or the Windows logo in the lower-left hand corner, and navigate to "My Computer."
+> Right-click on the empty space in the window, and choose ''Properties''.  A window labeled "System Properties" will pop up.
+> Click the "Advanced" tab and follow the steps below for all versions of Windows.
+
+The next steps are the same for any version of Windows.
+
+A window with the title "System Properties" will appear.
+
+#### Edit the Path
+
+1. Within System Properties, make sure you are in the tab labeled "Advanced".
+
+2. Click the button labeled "Environment Variables". A window labeled "Environment Variables" will appear.
+
+3. In this window, the screen is split between "User variables" and "System variables". Within "System variables", scroll down and find the one labeled Path. Click the "Edit..." button.
+
+4. A window with the "Variable name" and the "Variable value" should appear. The "Variable value" will already have some text in it; click in the box to unhighlight it (we don't want to accidentally delete that text).
+
+5. In the "Variable value" box, scroll to the end. Add the following text, and hit OK. Make sure to include the semicolon at the start!
+
+`;c:\python34\;c:\python34\scripts`
+
+6. Hit "OK" to close out the system properties window.
+
+
+#### Test your change:
+Open up a new command prompt. 
+
+You do this the same way you did above when installing python. This needs to be a new command prompt because the changes you just made didn't take affect in prompts that were already open.
+
+Type `python3` into the command prompt to start Python
+
+Notice that you now get a Python interpreter, indicated by the change to a `>>>` prompt.
+
+Exit the Python prompt by typing `exit()` and hitting enter. 
+
+Now you're back at the Windows command prompt `(C:\)`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

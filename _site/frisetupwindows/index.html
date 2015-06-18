@@ -76,7 +76,7 @@
   <article class="post-content">
     <p>Here’s what you need to do to set up your Windows machine.</p>
 
-<h1 id="install-python">Install Python</h1>
+<h1 id="download-and-install-python">Download and Install Python</h1>
 <p>If you already think you have Python 3 installed, please check with a staff member before completing these instructions.</p>
 
 <ol>
@@ -110,7 +110,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 &gt;&gt;&gt; 
 </code></p>
 
-<p>You just started Python! The »&gt; indicates that you are at a new type of prompt – a Python prompt. The command prompt lets you navigate your computer and run programs, and the Python prompt lets you write and run Python code interactively.</p>
+<p>You just started Python! The <code>&gt;&gt;&gt;</code> indicates that you are at a new type of prompt – a Python prompt. The command prompt lets you navigate your computer and run programs, and the Python prompt lets you write and run Python code interactively.</p>
 
 <ul>
   <li>If the number after Python is not 3 or greater, please tell an instructor or assistant.</li>
@@ -119,6 +119,79 @@ Type "help", "copyright", "credits" or "license" for more information.
 <ol>
   <li>To exit the Python shell, type <code>exit()</code> and hit enter.  You’ll now be back at the Windows command prompt (the <code>C:\</code> that you saw earlier).</li>
 </ol>
+
+<h1 id="put-python-on-the-windows-path">Put Python on the Windows PATH</h1>
+
+<p>You might have noticed that you typed a “full path” to the Python application above when launching Python (python.exe is the application, but we typed \Python34\python.exe). In this step, you will configure your computer so that you can run Python without typing the Python27 directory name.</p>
+
+<h4 id="get-to-system-properties">Get to System Properties</h4>
+
+<h5 id="windows-8">Windows 8</h5>
+
+<blockquote>
+  <p>Search for your “Control Panel” and open it.
+Select the “system” icon. A window labeled “View basic information about your computer” will appear.
+In this window, click “Advanced system settings” and follow the steps below for all versions of Windows.</p>
+</blockquote>
+
+<h5 id="windows-7-or-vista">Windows 7 or Vista</h5>
+
+<blockquote>
+  <p>Open up “Computer”  by clicking on the Start menu or the Windows logo in the lower-left hand corner, and navigate to “Computer.”
+‘‘Right-click’’ on the empty space in the window, and choose ‘‘Properties’’. A window labeled “View basic information about your computer” will appear.
+In this window, click “Advanced system settings” and follow the steps below for all versions of Windows.</p>
+</blockquote>
+
+<h5 id="windows-xp">Windows XP</h5>
+
+<blockquote>
+  <p>Open up “My Computer”  by clicking on the Start menu or the Windows logo in the lower-left hand corner, and navigate to “My Computer.”
+Right-click on the empty space in the window, and choose ‘‘Properties’’.  A window labeled “System Properties” will pop up.
+Click the “Advanced” tab and follow the steps below for all versions of Windows.</p>
+</blockquote>
+
+<p>The next steps are the same for any version of Windows.</p>
+
+<p>A window with the title “System Properties” will appear.</p>
+
+<h4 id="edit-the-path">Edit the Path</h4>
+
+<ol>
+  <li>
+    <p>Within System Properties, make sure you are in the tab labeled “Advanced”.</p>
+  </li>
+  <li>
+    <p>Click the button labeled “Environment Variables”. A window labeled “Environment Variables” will appear.</p>
+  </li>
+  <li>
+    <p>In this window, the screen is split between “User variables” and “System variables”. Within “System variables”, scroll down and find the one labeled Path. Click the “Edit…” button.</p>
+  </li>
+  <li>
+    <p>A window with the “Variable name” and the “Variable value” should appear. The “Variable value” will already have some text in it; click in the box to unhighlight it (we don’t want to accidentally delete that text).</p>
+  </li>
+  <li>
+    <p>In the “Variable value” box, scroll to the end. Add the following text, and hit OK. Make sure to include the semicolon at the start!</p>
+  </li>
+</ol>
+
+<p><code>;c:\python34\;c:\python34\scripts</code></p>
+
+<ol>
+  <li>Hit “OK” to close out the system properties window.</li>
+</ol>
+
+<h4 id="test-your-change">Test your change:</h4>
+<p>Open up a new command prompt. </p>
+
+<p>You do this the same way you did above when installing python. This needs to be a new command prompt because the changes you just made didn’t take affect in prompts that were already open.</p>
+
+<p>Type <code>python3</code> into the command prompt to start Python</p>
+
+<p>Notice that you now get a Python interpreter, indicated by the change to a <code>&gt;&gt;&gt;</code> prompt.</p>
+
+<p>Exit the Python prompt by typing <code>exit()</code> and hitting enter. </p>
+
+<p>Now you’re back at the Windows command prompt <code>(C:\)</code>.</p>
 
 <h1 id="prepare-a-text-editor">Prepare a text editor</h1>
 <p>Here is how you set up a text editor.</p>
