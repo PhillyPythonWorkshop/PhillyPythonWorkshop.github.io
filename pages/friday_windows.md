@@ -6,8 +6,6 @@ permalink: /frisetupwindows/
 
 Here's what you need to do to set up your Windows machine.
 
-Here's what you need to do to set up your Windows machine.
-
 #Install Python
 If you already think you have Python 3 installed, please check with a staff member before completing these instructions.
 
