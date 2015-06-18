@@ -8,6 +8,6 @@ Here's what you'll do on Friday evening to get yourself ready for the lectures a
 
 Choose your operating system:
 
-* Linux
-* MacOS
+* [Linux](/frisetuplinux/)
+* [MacOS](/frisetupmac/)
 * [Windows](/frisetupwindows)
