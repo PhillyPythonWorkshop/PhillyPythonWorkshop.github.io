@@ -11,7 +11,7 @@ Here's what you need to do to set up your Windows machine.
 #Install Python
 If you already think you have Python 3 installed, please check with a staff member before completing these instructions.
 
-1.  Click on https://www.python.org/ftp/python/3.4.3/python-3.4.3.msi and choose "run" if you have the option to do so. Otherwise, save it to your computer and double click to start the installer.  Follow the instructions to complete the installation.
+1.  Click on [this download link](https://www.python.org/ftp/python/3.4.3/python-3.4.3.msi) and choose "run" if you have the option to do so. Otherwise, save it to your computer and double click to start the installer.  Follow the instructions to complete the installation.
 
 2.  Open a command prompt (we will be doing this multiple times, so make a note of how to do this!):
   * On Windows 8 search for "command prompt"
