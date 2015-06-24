@@ -118,3 +118,38 @@ Variables can be made of letters, numbers, and underscores. They must start with
 
 Projects develop naming conventions: multi-word variable names may use underscores (like `magic_number`), or "camel case" (like `amountOfFlour`). The most important thing is to be consistent within a project, because it makes the code more readable.
 
+
+###Strings
+
+So far we've seen two data types: *integers* and *floats*. Another useful data type is a *string*, which is just what Python calls a bunch of characters (like numbers, letters, whitespace, and punctuation) put together. Strings are indicated by being surrounded by quotes:
+
+`"Hello"`
+
+`"Python, I'm your #1 fan!"`
+
+Like with the numeric data types, we can check the type of a string:
+
+`type("Hello")`
+
+`type(1)`
+
+`type("1")`
+
+You can assign a string value to a variable:
+
+`my_car = "Toyota"`
+
+
+####String Concatenation
+
+You can join strings together using the `+` sign:
+
+`"Hello" + "World"`
+
+`"I drive a " + my_car`
+
+
+
+
+
+
