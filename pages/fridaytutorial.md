@@ -184,3 +184,26 @@ There's another useful function that works on strings called `len()`.  This retu
 `president = "Obama"`
 
 `len(ice_cream)`
+
+####Quotes
+
+We've been using double quotes around your strings, but either double or single quotes are valid in Python:
+
+`"Hello world"`
+
+`'Hello world'`
+
+You do have to be careful about using quotes inside strings:
+
+`'Let's learn Python together!'`
+
+will give you another `traceback`, for a `SyntaxError`.  When Python evaluates this expression, it starts at the first single quote as the start of the string, and to the next single quote as the end of the string.  Then it doesn't know what to do with the rest of the stuff that follows.
+
+There are a few ways to solve this problem.  One is to use double quotes:
+
+`"Let's learn Python together!"`
+
+or we can *escape* the quote with a backslash.  The backslash is a special character that tells Python to treat the next character literally, not as part of the syntax or code.
+
+`'Let\'s learn Python together!'`
+

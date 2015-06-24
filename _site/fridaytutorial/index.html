@@ -287,6 +287,29 @@ Python gives us a helpful error message as part of the <code>TypeError</code>:
 
 <p><code>len(ice_cream)</code></p>
 
+<h4 id="quotes">Quotes</h4>
+
+<p>We’ve been using double quotes around your strings, but either double or single quotes are valid in Python:</p>
+
+<p><code>"Hello world"</code></p>
+
+<p><code>'Hello world'</code></p>
+
+<p>You do have to be careful about using quotes inside strings:</p>
+
+<p><code>'Let's learn Python together!'</code></p>
+
+<p>will give you another <code>traceback</code>, for a <code>SyntaxError</code>.  When Python evaluates this expression, it starts at the first single quote as the start of the string, and to the next single quote as the end of the string.  Then it doesn’t know what to do with the rest of the stuff that follows.</p>
+
+<p>There are a few ways to solve this problem.  One is to use double quotes:</p>
+
+<p><code>"Let's learn Python together!"</code></p>
+
+<p>or we can <em>escape</em> the quote with a backslash.  The backslash is a special character that tells Python to treat the next character literally, not as part of the syntax or code.</p>
+
+<p><code>'Let\'s learn Python together!'</code></p>
+
+
   </article>
 
 </div>
