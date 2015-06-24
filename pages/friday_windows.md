@@ -187,4 +187,4 @@ Download the [Colorwall Project](https://github.com/PhillyPythonWorkshop/Colorwa
 Coding Bat practice
 
 #Checkoff
-Have an instructor or assistant check you off
+Have an instructor or assistant [check you off](/fridaycheckoff/).
