@@ -173,5 +173,14 @@ We can, however, use the `str()` function to convert a number to a string.  Like
 
 `str("Ice cream")`
 
+####String Length
 
+There's another useful function that works on strings called `len()`.  This returns the length of a string as an integer.
 
+`len("Hello")`
+
+`len("")`
+
+`president = "Obama"`
+
+`len(ice_cream)`
