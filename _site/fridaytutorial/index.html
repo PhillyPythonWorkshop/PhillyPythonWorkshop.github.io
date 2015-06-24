@@ -245,11 +245,27 @@
 
 <h4 id="string-concatenation">String Concatenation</h4>
 
-<p>You can join strings together using the <code>+</code> sign:</p>
+<p>You can concatenate, or join strings together using the <code>+</code> sign:</p>
 
 <p><code>"Hello" + "World"</code></p>
 
 <p><code>"I drive a " + my_car</code></p>
+
+<p>You can not concatenate a string with another data type.</p>
+
+<p><code>"Hello" + 123</code></p>
+
+<p>will give you a <em>traceback</em>:</p>
+
+<pre><code>Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+TypeError: cannot concatenate 'str' and 'int' objects
+</code></pre>
+
+<p>A traceback provides details on what was happening when Python encounters an Exception or Error – something it doesn’t know how to handle.
+There are many kinds of Python errors, with descriptive names to help us humans understand what went wrong. In this case we are getting a <code>TypeError</code>: we tried to do some operation on a data type that isn’t supported for that data type.
+Python gives us a helpful error message as part of the <code>TypeError</code>:
+<code>"cannot concatenate 'str' and 'int' objects"</code>.</p>
 
 
   </article>

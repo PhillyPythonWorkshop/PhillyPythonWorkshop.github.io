@@ -142,14 +142,27 @@ You can assign a string value to a variable:
 
 ####String Concatenation
 
-You can join strings together using the `+` sign:
+You can concatenate, or join strings together using the `+` sign:
 
 `"Hello" + "World"`
 
 `"I drive a " + my_car`
 
+You can not concatenate a string with another data type.
 
+`"Hello" + 123`
 
+will give you a *traceback*:
 
+~~~
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: cannot concatenate 'str' and 'int' objects
+~~~
+
+A traceback provides details on what was happening when Python encounters an Exception or Error -- something it doesn't know how to handle.
+There are many kinds of Python errors, with descriptive names to help us humans understand what went wrong. In this case we are getting a `TypeError`: we tried to do some operation on a data type that isn't supported for that data type.
+Python gives us a helpful error message as part of the `TypeError`:
+`"cannot concatenate 'str' and 'int' objects"`.
 
 
