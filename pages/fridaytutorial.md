@@ -207,3 +207,4 @@ or we can *escape* the quote with a backslash.  The backslash is a special chara
 
 `'Let\'s learn Python together!'`
 
+Let's take a break.  We've covered a lot!
