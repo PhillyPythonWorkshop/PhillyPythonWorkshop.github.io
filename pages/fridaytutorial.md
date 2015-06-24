@@ -46,6 +46,14 @@ Division uses the `/` symbol.
 
 > Note: If you've used Python 2, you'll see that division works differently in Python 3.  Python 2 uses floor division for integers, meaning it will return only the whole number part of the answer. Python 3 performs true division, returning the real or true value of the division.
 
+####Order of Operations
+
+Order of operations works just like you may have learned in math class - Multiplication, Division, Addition, Subtraction. You can also use parentheses.
+
+`5 + 4 * 3`
+
+`(5 + 4) * 3`
+
 ###Types
 
 There's a helpful function (more on what a function is later) called `type` that tells you what kind of thing -- what data type -- Python thinks something is. We can check for ourselves that Python considers '1' and '1.0' to be different data types:
