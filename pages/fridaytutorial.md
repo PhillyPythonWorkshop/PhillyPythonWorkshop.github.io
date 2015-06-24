@@ -165,4 +165,13 @@ There are many kinds of Python errors, with descriptive names to help us humans 
 Python gives us a helpful error message as part of the `TypeError`:
 `"cannot concatenate 'str' and 'int' objects"`.
 
+We can, however, use the `str()` function to convert a number to a string.  Like the `type()` function we've been using, `str()` takes one argument as input and outputs it as a string.
+
+`str(4)`
+
+`str(5.34)`
+
+`str("Ice cream")`
+
+
 
