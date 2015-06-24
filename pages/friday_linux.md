@@ -19,12 +19,12 @@ Here is how you set up a text editor.
 * Open a command prompt.
 * To start Python, type `python3` at the command prompt and hit enter. You should see something like
 
-```
+~~~
 Python 3.4.0 (default, Apr 11 2014, 13:05:11)
 [GCC 4.8.2] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
-```
+~~~
 
 * The `>>>` indicates that you are at a Python prompt.
 * Exit the Python prompt by typing `exit()` and hitting enter. 
