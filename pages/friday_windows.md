@@ -177,6 +177,9 @@ Answer these questions. Experiment at the command line if you need to! If you ar
 #### Success!
 You've practiced using dir and cd to navigate your computer's filesystem from the command prompt.
 
+#Start learning Python!
+Go through this [self-directed tutorial](/fridaytutorial/) to start learning to read and write in Python. These concepts will be reviewed in the Saturday lesson, along with some more advanced topics.
+
 #Get dependencies installed for the projects
 
 Download the [Wordplay Project](https://github.com/PhillyPythonWorkshop/Wordplay/archive/master.zip).

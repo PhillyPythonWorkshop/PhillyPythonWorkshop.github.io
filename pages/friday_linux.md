@@ -92,35 +92,11 @@ Answer these questions. Experiment at the command line if you need to! If you ar
 * What are 2 ways to avoid typing out a full navigation command? (hint: one requires that you've run the command before)
 * What is the difference between a command prompt and a Python prompt?
 
+#### Success!
+You've practiced using dir and cd to navigate your computer's filesystem from the command prompt.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Start learning Python!
+Go through this [self-directed tutorial](/fridaytutorial/) to start learning to read and write in Python. These concepts will be reviewed in the Saturday lesson, along with some more advanced topics.
 
 #Get dependencies installed for the projects
 
