@@ -82,6 +82,18 @@ A lot of work gets done in Python using variables. Variables are like names that
 
 Giving a name to something, so that you can refer to it by that name, is called assignment. Above, we assigned the name 'x' to 4, and after that we can use x wherever we want to use the number 4.
 
+Variables can be re-assigned.
+
+`x = 3`
+
+`x`
+
+`x = 7`
+
+`x`
+
+Be careful when you do this... accidentally re-assigning a variable can cause bugs in your code.
+
 Variables can be made of letters, numbers, and underscores. They must start with a letter and can not contain any other special characters.  Here are some valid variable names:
 
 `magic_number = 1500`
