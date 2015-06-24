@@ -65,3 +65,30 @@ So in this case 'type' is the name of the function, and it takes one argument; i
 
 
 *Stop for a moment here and try pressing the up arrow on your keyboard a few times.  The Python interpreter saves a history of what you've entered, so you can arrow up to old commands and hit Return to re-run them -- just like your computer's command prompt!  (Note, however, tab completion is not built into the Python shell.)*{: style="color: blue"}
+
+###Variables
+
+A lot of work gets done in Python using variables. Variables are like names that are assigned to a value -- any kind of value, not just a number.
+
+`type(4)`
+
+`x = 4`
+
+`x`
+
+`type(x)`
+
+`2 * x`
+
+Giving a name to something, so that you can refer to it by that name, is called assignment. Above, we assigned the name 'x' to 4, and after that we can use x wherever we want to use the number 4.
+
+Variables can be made of letters, numbers, and underscores. They must start with a letter and can not contain any other special characters.  Here are some valid variable names:
+
+`magic_number = 1500`
+
+`amountOfFlour = .75`
+
+`my_name = "Jessica"`
+
+Projects develop naming conventions: multi-word variable names may use underscores (like `magic_number`), or "camel case" (like `amountOfFlour`). The most important thing is to be consistent within a project, because it makes the code more readable.
+
