@@ -64,3 +64,4 @@ We used the term 'function' without explaining what it is -- we'll talk about fu
 So in this case 'type' is the name of the function, and it takes one argument; in the example we first give type an argument of 1 and then give it an argument of 1.0.
 
 
+*Stop for a moment here and try pressing the up arrow on your keyboard a few times.  The Python interpreter saves a history of what you've entered, so you can arrow up to old commands and hit Return to re-run them -- just like your computer's command prompt!  (Note, however, tab completion is not built into the Python shell.)*{: style="color: blue"}
