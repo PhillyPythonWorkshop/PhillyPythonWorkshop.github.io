@@ -207,7 +207,32 @@ or we can *escape* the quote with a backslash.  The backslash is a special chara
 
 `'Let\'s learn Python together!'`
 
-Let's take a break.  We've covered a lot!
+####Exercises
 
-A new line just to test after the pull request.
+Let's take a look at a couple of exercises.  Read the following lines of code, but don't execute them.  Try to figure out what they will do.  Sketch them out with pen and paper if you need to. Then type them in your terminal and execute them to see what happens.
+
+1.
+
+~~~
+total = 1.5 - 1/2 + ((-2.0/2) - (1.0/2))
+print(total)
+type(total)
+~~~
+
+2.
+
+~~~
+a = "quick"
+b = "brown"
+c = "fox jumps over the lazy dog"
+print("The " +  a * 3 + " " +  b * 3 + " " + c)
+~~~
+
+3.
+
+~~~
+print(2.0 * 123 + str(2.0) * 123)
+~~~
+
+Let's take a break.  We've covered a lot!
 
