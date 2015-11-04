@@ -376,6 +376,57 @@ print("""Jim Kenney received
   <dd>How do you print a multi-line string so that whitespace is preserved?</dd>
 </dl>
 
+<h4 id="booleans">Booleans</h4>
+<p>So far, the code we’ve written has been <em>unconditional</em>: no choice is getting made, and the code is always run. Python has another data type called a <strong>boolean</strong> that is helpful for writing code that makes decisions. There are two booleans: <code>True</code> and <code>False</code>.</p>
+
+<p>Try typing these in your Python console.</p>
+
+<p><code>True</code></p>
+
+<p><code>type(True)</code></p>
+
+<p><code>False</code></p>
+
+<p><code>type(False)</code></p>
+
+<p>You can test if Python objects are equal or unequal. The result is a boolean.  Try typing these expressions in your Python console:</p>
+
+<p><code>0 == 0</code></p>
+
+<p><code>1 == 0</code></p>
+
+<p><code>54 = 42</code></p>
+
+<p>Use <code>==</code> to test for equality. Recall that <code>=</code> is used for assignment of a variable to a value.
+This is an important idea and can be a source of bugs until you get used to it: <code>=</code> is assignment, <code>==</code> is comparison.</p>
+
+<p>Use <code>!=</code> to test for inequality:</p>
+
+<p><code>"a" != "a"</code></p>
+
+<p><code>"a" != "A"</code></p>
+
+<p><code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, and <code>&gt;=</code> have the same meaning as in math class. The result of these tests is a boolean:</p>
+
+<p><code>1 &gt; 0</code></p>
+
+<p><code>2 &gt;= 3</code></p>
+
+<p><code>-1 &lt; 0</code></p>
+
+<p><code>.5 &lt;= 1</code></p>
+
+<p>You can check for containment with the <code>in</code> keyword, which also results in a boolean:</p>
+
+<p><code>"H" in "Hello"</code></p>
+
+<p><code>"X" in "Hello"</code></p>
+
+<p>Or check for a lack of containment with <code>not in</code>:</p>
+
+<p><code>"a" not in "abcde"</code></p>
+
+<p><code>"Chicago" not in "Philadelphia Python Workshop"</code></p>
 
   </article>
 

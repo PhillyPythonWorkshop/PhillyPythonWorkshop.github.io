@@ -1,0 +1,214 @@
+<p>This is the self-guided, self-paced tutorial for Friday evening.  We’ve included a break in the middle, but remember to take a break to stretch, get some water, take a moment to relax any time you need to.</p>
+
+<p>As you go through this tutorial, any time you see something like this:</p>
+
+<p><code>a = "Hello"</code></p>
+
+<p>it’s something that you can type in at the <code>&gt;&gt;&gt;</code> prompt in your Python shell.  Hit Return or Enter after every line and note the output (although sometimes there won’t be any!).  Don’t copy and paste – you’ll learn much better if you take the time to type everything yourself.</p>
+
+<h3 id="math">Math</h3>
+
+<p>Math in Python looks a lot like math with a calculator.</p>
+
+<h4 id="addition">Addition</h4>
+
+<p><code>2 + 2</code></p>
+
+<p><code>1.65 + 2.15</code></p>
+
+<h4 id="subtraction">Subtraction</h4>
+
+<p><code>12 - 5</code></p>
+
+<p><code>45.9 - 25.3</code></p>
+
+<p><code>45.9 - 61.7</code></p>
+
+<h4 id="multiplication">Multiplication</h4>
+<p>Multiplication uses the <code>*</code> (asterisk or star) symbol.</p>
+
+<p><code>6 * 7</code></p>
+
+<p><code>5.6 * 4.3</code></p>
+
+<h4 id="division">Division</h4>
+<p>Division uses the <code>/</code> symbol.</p>
+
+<p><code>12/3</code></p>
+
+<p><code>16/5</code></p>
+
+<blockquote>
+  <p>Note: If you’ve used Python 2, you’ll see that division works differently in Python 3.  Python 2 uses floor division for integers, meaning it will return only the whole number part of the answer. Python 3 performs true division, returning the real or true value of the division.</p>
+</blockquote>
+
+<h4 id="order-of-operations">Order of Operations</h4>
+
+<p>Order of operations works just like you may have learned in math class - Multiplication, Division, Addition, Subtraction. You can also use parentheses.</p>
+
+<p><code>5 + 4 * 3</code></p>
+
+<p><code>(5 + 4) * 3</code></p>
+
+<h3 id="types">Types</h3>
+
+<p>There’s a helpful function (more on what a function is later) called <code>type</code> that tells you what kind of thing – what data type – Python thinks something is. We can check for ourselves that Python considers ‘1’ and ‘1.0’ to be different data types:</p>
+
+<p><code>type(1)</code>
+<code>type(1.0)</code></p>
+
+<p>So now we’ve seen two data types: <em>integers</em> and <em>floats</em>.  We’ll see more data types as we work through the lesson.</p>
+
+<p>We used the term ‘function’ without explaining what it is – we’ll talk about functions more in a bit, and write our own, but for now know these things:</p>
+
+<ul>
+  <li>Functions encapsulate some useful bit of work. We save that useful bit of work inside the function so we don’t have to type it over and over again every time we want to use it. So, for example, some nice person decided that being able to determine the type of an object was useful, so he or she put the Python code that figures out an object’s type into the function <code>type()</code>, and now we all get to use it, instead of having to write it ourselves.</li>
+  <li>Functions are sort of like functions in math class. You provide input to a function and it produces output. The <code>type()</code> function takes data as an input, and produces what type of data the data is (e.g. an integer or a float) as output.</li>
+  <li>To use a function, write the name of the function followed by an open parenthesis, what the function takes as input (we call that input the arguments to the function), and then a close parenthesis.</li>
+</ul>
+
+<p>So in this case ‘type’ is the name of the function, and it takes one argument; in the example we first give type an argument of 1 and then give it an argument of 1.0.</p>
+
+<p><em style="color: blue">Stop for a moment here and try pressing the up arrow on your keyboard a few times.  The Python interpreter saves a history of what you’ve entered, so you can arrow up to old commands and hit Return to re-run them – just like your computer’s command prompt!  (Note, however, tab completion is not built into the Python shell.)</em></p>
+
+<h3 id="variables">Variables</h3>
+
+<p>A lot of work gets done in Python using variables. Variables are like names that are assigned to a value – any kind of value, not just a number.</p>
+
+<p><code>type(4)</code></p>
+
+<p><code>x = 4</code></p>
+
+<p><code>x</code></p>
+
+<p><code>type(x)</code></p>
+
+<p><code>2 * x</code></p>
+
+<p>Giving a name to something, so that you can refer to it by that name, is called assignment. Above, we assigned the name ‘x’ to 4, and after that we can use x wherever we want to use the number 4.</p>
+
+<p>The space between the variable name, the equal sign, and its value does not matter.  The following are the same.  You should be consistent in your code.</p>
+
+<p><code>x = 5</code></p>
+
+<p><code>x=5</code></p>
+
+<p>Variables can be re-assigned.</p>
+
+<p><code>x = 3</code></p>
+
+<p><code>x</code></p>
+
+<p><code>x = 7</code></p>
+
+<p><code>x</code></p>
+
+<p>Be careful when you do this though… accidentally re-assigning a variable can cause bugs in your code.</p>
+
+<p>Variables can be made of letters, numbers, and underscores. They must start with a letter and can not contain any other special characters.  Here are some valid variable names:</p>
+
+<p><code>magic_number = 1500</code></p>
+
+<p><code>amountOfFlour = .75</code></p>
+
+<p><code>my_name = "Jessica"</code></p>
+
+<p>Projects develop naming conventions: multi-word variable names may use underscores (like <code>magic_number</code>), or “camel case” (like <code>amountOfFlour</code>). The most important thing is to be consistent within a project, because it makes the code more readable.</p>
+
+<h3 id="strings">Strings</h3>
+
+<p>So far we’ve seen two data types: <em>integers</em> and <em>floats</em>. Another useful data type is a <em>string</em>, which is just what Python calls a bunch of characters (like numbers, letters, whitespace, and punctuation) put together. Strings are indicated by being surrounded by quotes:</p>
+
+<p><code>"Hello"</code></p>
+
+<p><code>"Python, I'm your #1 fan!"</code></p>
+
+<p>Like with the numeric data types, we can check the type of a string:</p>
+
+<p><code>type("Hello")</code></p>
+
+<p><code>type(1)</code></p>
+
+<p><code>type("1")</code></p>
+
+<p>You can assign a string value to a variable:</p>
+
+<p><code>my_car = "Toyota"</code></p>
+
+<h4 id="string-concatenation">String Concatenation</h4>
+
+<p>You can concatenate, or join strings together using the <code>+</code> sign:</p>
+
+<p><code>"Hello" + "World"</code></p>
+
+<p><code>"I drive a " + my_car</code></p>
+
+<p>You can not concatenate a string with another data type.</p>
+
+<p><code>"Hello" + 123</code></p>
+
+<p>will give you a <em>traceback</em>:</p>
+
+<pre><code>Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+TypeError: cannot concatenate 'str' and 'int' objects
+</code></pre>
+
+<p>A traceback provides details on what was happening when Python encounters an Exception or Error – something it doesn’t know how to handle.
+There are many kinds of Python errors, with descriptive names to help us humans understand what went wrong. In this case we are getting a <code>TypeError</code>: we tried to do some operation on a data type that isn’t supported for that data type.
+Python gives us a helpful error message as part of the <code>TypeError</code>:
+<code>"cannot concatenate 'str' and 'int' objects"</code>.</p>
+
+<p>We can, however, use the <code>str()</code> function to convert a number to a string.  Like the <code>type()</code> function we’ve been using, <code>str()</code> takes one argument as input and outputs it as a string.</p>
+
+<p><code>str(4)</code></p>
+
+<p><code>str(5.34)</code></p>
+
+<p><code>str("Ice cream")</code></p>
+
+<h4 id="string-length">String Length</h4>
+
+<p>There’s another useful function that works on strings called <code>len()</code>.  This returns the length of a string as an integer.</p>
+
+<p><code>len("Hello")</code></p>
+
+<p><code>len("")</code></p>
+
+<p><code>president = "Obama"</code></p>
+
+<p><code>len(ice_cream)</code></p>
+
+<h4 id="quotes">Quotes</h4>
+
+<p>We’ve been using double quotes around your strings, but either double or single quotes are valid in Python:</p>
+
+<p><code>"Hello world"</code></p>
+
+<p><code>'Hello world'</code></p>
+
+<p>You do have to be careful about using quotes inside strings:</p>
+
+<p><code>'Let's learn Python together!'</code></p>
+
+<p>will give you another <code>traceback</code>, for a <code>SyntaxError</code>.  When Python evaluates this expression, it starts at the first single quote as the start of the string, and to the next single quote as the end of the string.  Then it doesn’t know what to do with the rest of the stuff that follows.</p>
+
+<p>There are a few ways to solve this problem.  One is to use double quotes:</p>
+
+<p><code>"Let's learn Python together!"</code></p>
+
+<p>or we can <em>escape</em> the quote with a backslash.  The backslash is a special character that tells Python to treat the next character literally, not as part of the syntax or code.</p>
+
+<p><code>'Let\'s learn Python together!'</code></p>
+
+<p>Let’s take a break.  We’ve covered a lot!
+Ok, we’re back.  </p>
+
+<p>Let’s take a look at a couple of exercises.  Read the following lines of code, but don’t execute them.  Try to figure out what they will do.  Then execute them to see what happens.</p>
+
+<p>1.
+`
+total = 1.5 - 1/2 + ((-2.0/2) - (1.0/2))
+print total
+type(total)
+`</p>

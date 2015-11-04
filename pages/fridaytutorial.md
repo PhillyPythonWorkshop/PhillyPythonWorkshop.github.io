@@ -278,3 +278,56 @@ Open this script from the command line and study what happens.
 : How do you print just a newline?
 : How do you print a multi-line string so that whitespace is preserved?
 
+
+####Booleans
+So far, the code we've written has been *unconditional*: no choice is getting made, and the code is always run. Python has another data type called a **boolean** that is helpful for writing code that makes decisions. There are two booleans: `True` and `False`.
+
+Try typing these in your Python console.
+
+`True`
+
+`type(True)`
+
+`False`
+
+`type(False)`
+
+You can test if Python objects are equal or unequal. The result is a boolean.  Try typing these expressions in your Python console:
+
+`0 == 0`
+
+`1 == 0`
+
+`54 = 42`
+
+Use `==` to test for equality. Recall that `=` is used for assignment of a variable to a value.
+This is an important idea and can be a source of bugs until you get used to it: `=` is assignment, `==` is comparison.
+
+
+Use `!=` to test for inequality:
+
+`"a" != "a"`
+
+`"a" != "A"`
+
+`<`, `<=`, `>`, and `>=` have the same meaning as in math class. The result of these tests is a boolean:
+
+`1 > 0`
+
+`2 >= 3`
+
+`-1 < 0`
+
+`.5 <= 1`
+
+You can check for containment with the `in` keyword, which also results in a boolean:
+
+`"H" in "Hello"`
+
+`"X" in "Hello"`
+
+Or check for a lack of containment with `not in`:
+
+`"a" not in "abcde"`
+
+`"Chicago" not in "Philadelphia Python Workshop"`

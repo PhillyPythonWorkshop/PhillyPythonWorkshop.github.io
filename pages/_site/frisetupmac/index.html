@@ -1,0 +1,74 @@
+<p>While Macs come with Python 2.7.x pre-installed, we’ll be working with Python 3 during this session so there’s some light installation ahead of us. This will require administrative priveleges to your computer since the python installation is usually done to protected directories.</p>
+
+<p>Along the way, we’ll also set up a more advanced text editor that will help us by providing some really specific programming features.</p>
+
+<h1 id="installing-the-command-line-tools">Installing the Command-Line Tools</h1>
+
+<p>If you don’t have the command line tools provided by Apple already set up, you’ll need to do that.</p>
+
+<p>You can check whether you have them already by:</p>
+
+<ol>
+  <li>opening <code>Terminal</code> (you can find it in your <code>Utilities</code> directory inside of <code>Applications</code>)</li>
+  <li>typing in the following and then pressing <code>enter</code>:</li>
+</ol>
+
+<pre><code>gcc
+</code></pre>
+
+<p>If a pop-up shows up asking whether you’d like to install the Command Line tools, say Yes and follow the provided steps.
+If nothing happens and the window just looks like nothing is happening, it means you’re already good to go! You can type in <code>CTRL+c</code> and your terminal will be ready for the following steps.</p>
+
+<h1 id="installing-homebrew">Installing Homebrew</h1>
+
+<p><a href="http://brew.sh">Homebrew</a> is a <a href="https://en.wikipedia.org/wiki/Package_manager">package manager</a> for Mac. It will help us quickly install Python 3.</p>
+
+<ol>
+  <li>Open up the <code>Terminal</code> application (if you haven’t already)</li>
+  <li>Copy and paste the following into the command window and press <code>enter</code></li>
+</ol>
+
+<pre><code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+</code></pre>
+
+<p>During this process, you will prompted for your password (again, you’ll need to have administrative priveleges). Don’t worry if characters don’t show up as you type; that’s just how it keeps your password hidden from others’ prying eyes :) !</p>
+
+<h1 id="installing-python3">Installing python3</h1>
+
+<p>With Homebrew now installed, you can install <code>python3</code> with the following command in the <code>Terminal</code>.</p>
+
+<pre><code>brew install python3
+</code></pre>
+
+<h1 id="testing-the-installation">Testing the installation</h1>
+
+<p>You can test that your installation went well by running the <code>python3</code> interpreter in the <code>Terminal</code>. </p>
+
+<p>Enter the following into the terminal and press <code>enter</code>:</p>
+
+<pre><code>python3
+</code></pre>
+
+<p>You should then see something like,</p>
+
+<pre><code>Python 3.5.0 (default, Sep 14 2015, 02:37:27) 
+[GCC 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.53)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; 
+</code></pre>
+
+<p>While inside the python interpreter:</p>
+
+<ul>
+  <li>The <code>&gt;&gt;&gt;</code> indicates that you are at a Python prompt.</li>
+  <li>You can exit the Python prompt by typing <code>exit()</code> and pressing enter or by using <code>CTRL+d</code>. </li>
+  <li>Practice doing this a few times until you are comfortable entering and exiting the Python shell.</li>
+</ul>
+
+<h1 id="installing-a-text-editor-sublime">Installing a Text Editor (Sublime)</h1>
+
+<p>While you can absolutely write python code in TextEdit (make sure you’ve turned off rich text editting), it is a lot easier to use a text editor that is more aware of code content. To that end, we’ll be using Sublime Text 3. While there are a multitude of other options, Sublime 3 provides a good blend of simplicity and functionality.</p>
+
+<p><a href="http://www.sublimetext.com/3">Download it from here</a></p>
+
+<p>Once downloaded, install it as you would any other OS X application. Being explicit, this means double-clicking the downloaded <code>dmg</code> file, letting it open up, and subsequently dragging the <code>Sublime Text</code> application into your <code>Applications</code> folder. </p>
