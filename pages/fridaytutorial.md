@@ -331,3 +331,119 @@ Or check for a lack of containment with `not in`:
 `"a" not in "abcde"`
 
 `"Chicago" not in "Philadelphia Python Workshop"`
+
+####Flow Control
+
+Now that we know how to check if something is `True` or `False` we can use this to make Python execute command conditionally.
+
+
+~~~
+if 6 > 5:
+     print("Six is greater than five!")
+~~~
+
+That was our first multi-line piece of code, and the way to enter it at a Python prompt is a little different. First, type the `if 6 > 5:` part, and hit `enter`. The next line will have `...` as a prompt, instead of the usual `>>>`. This is Python telling us that we are in the middle of a code block, and so long as we indent our code it should be a part of this code block.
+Type 4 spaces, and then type `print("Six is greater than five!")`. Hit `enter` to end the line, and hit `enter` again to tell Python you are done with this code block. All together, it will look like this:
+
+~~~
+>>> if 6 > 5:
+...      print "Six is greater than five!"
+... 
+Six is greater than five!
+~~~
+
+
+So what's going on here? When Python encounters the `if` keyword, it evaluates the expression following the keyword and before the colon. If that expression is `True`, Python executes the code in the indented code block under the `if` line. If that expression is `False`, Python skips over the code block.
+
+In this case, because 6 really is greater than 5, Python executes the code block under the if statement, and we see "Six is greater than five!" printed to the screen. Guess what will happen with these other expressions, then type them out and see if your guess was correct:
+
+~~~
+if 0 > 2:
+     print("Zero is greater than two!")
+if "banana" in "bananarama":
+    print("I miss the 80s.")
+~~~
+
+**more choices: if and else**
+
+You can use the `else` keyword to execute code only when the `if` expression isn't `True`:
+
+~~~
+sister_age = 15
+brother_age = 12
+if sister_age > brother_age:
+    print("sister is older")
+else:
+    print("brother is older")
+~~~
+
+Like with `if`, the code block under the `else` statement must be indented so Python knows that it is a part of the `else` block.
+
+**compound conditionals: `and` and `or`**
+
+We've been testing single conditions, but we can also test multiple conditions that result in execution of some code.
+You can check multiple expressions together using the `and` and `or` keywords. If two expressions are joined by an `and`, they both have to be `True` for the overall expression to be `True`. If two expressions are joined by an `or`, as long as at least one is `True`, the overall expression is `True`.
+
+Try typing these out and see what you get:
+
+`1 > 0 and 1 < 2`
+
+`1 < 2 and "x" in "abc"`
+
+`"a" in "hello" or "e" in "hello"`
+
+`1 <= 0 or "a" not in "abc"`
+
+Guess what will happen when you enter these next two examples, and then type them out and see if you are correct. If you have trouble with the indenting, call over a staff member and practice together. It is important to be comfortable with indenting for tomorrow. Indenting is a crucial part of the syntax of Python.
+
+~~~
+temperature = 32
+if temperature > 60 and temperature < 75:
+    print("It's nice and cozy in here!")
+else:
+    print("Too extreme for me.")
+~~~
+
+~~~
+hour = 11
+if hour < 7 or hour > 23:
+    print("Go away!")
+    print("I'm sleeping!")
+else:
+    print("Welcome to the cheese shop!")
+    print("Can I interest you in some choice gouda?")
+~~~~
+
+You can have as many lines of code as you want in if and else blocks; just make sure to indent them so Python knows they are a part of the block.
+
+
+**even more choices: elif and else**
+
+If you have more than two cases, you can use the `elif` keyword to check more cases. Think of `elif` as Python-speak for else if.  You can have as many `elif` cases as you want; Python will go down the code checking each `elif` until it finds a `True` condition or reaches the default `else` block.
+
+~~~
+sister_age = 15
+brother_age = 12
+if sister_age > brother_age:
+    print("sister is older")
+elif sister_age == brother_age:
+    print("sister and brother are the same age")
+else:
+    print("brother is older")
+~~~
+
+You don't have to have an `else` block, if you don't need it. That just means there isn't default code to execute when none of the `if` or `elif`conditions are `True`:
+
+~~~
+color = "orange"
+if color == "green" or color == "red":
+  print("Christmas color!")
+elif color == "black" or color == "orange":
+  print("Halloween color!")
+elif color == "pink":
+  print("Valentine's Day color!")
+~~~
+
+
+If color had been "purple", that code wouldn't have printed anything.
+*Remember that `=` is for assignment and `==` is for comparison.*

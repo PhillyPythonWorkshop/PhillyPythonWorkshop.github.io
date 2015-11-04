@@ -428,6 +428,110 @@ This is an important idea and can be a source of bugs until you get used to it: 
 
 <p><code>"Chicago" not in "Philadelphia Python Workshop"</code></p>
 
+<h4 id="flow-control">Flow Control</h4>
+
+<p>Now that we know how to check if something is <code>True</code> or <code>False</code> we can use this to make Python execute command conditionally.</p>
+
+<pre><code>if 6 &gt; 5:
+     print("Six is greater than five!")
+</code></pre>
+
+<p>That was our first multi-line piece of code, and the way to enter it at a Python prompt is a little different. First, type the <code>if 6 &gt; 5:</code> part, and hit <code>enter</code>. The next line will have <code>...</code> as a prompt, instead of the usual <code>&gt;&gt;&gt;</code>. This is Python telling us that we are in the middle of a code block, and so long as we indent our code it should be a part of this code block.
+Type 4 spaces, and then type <code>print("Six is greater than five!")</code>. Hit <code>enter</code> to end the line, and hit <code>enter</code> again to tell Python you are done with this code block. All together, it will look like this:</p>
+
+<pre><code>&gt;&gt;&gt; if 6 &gt; 5:
+...      print "Six is greater than five!"
+... 
+Six is greater than five!
+</code></pre>
+
+<p>So what’s going on here? When Python encounters the <code>if</code> keyword, it evaluates the expression following the keyword and before the colon. If that expression is <code>True</code>, Python executes the code in the indented code block under the <code>if</code> line. If that expression is <code>False</code>, Python skips over the code block.</p>
+
+<p>In this case, because 6 really is greater than 5, Python executes the code block under the if statement, and we see “Six is greater than five!” printed to the screen. Guess what will happen with these other expressions, then type them out and see if your guess was correct:</p>
+
+<pre><code>if 0 &gt; 2:
+     print("Zero is greater than two!")
+if "banana" in "bananarama":
+    print("I miss the 80s.")
+</code></pre>
+
+<p><strong>more choices: if and else</strong></p>
+
+<p>You can use the <code>else</code> keyword to execute code only when the <code>if</code> expression isn’t <code>True</code>:</p>
+
+<pre><code>sister_age = 15
+brother_age = 12
+if sister_age &gt; brother_age:
+    print("sister is older")
+else:
+    print("brother is older")
+</code></pre>
+
+<p>Like with <code>if</code>, the code block under the <code>else</code> statement must be indented so Python knows that it is a part of the <code>else</code> block.</p>
+
+<p><strong>compound conditionals: <code>and</code> and <code>or</code></strong></p>
+
+<p>We’ve been testing single conditions, but we can also test multiple conditions that result in execution of some code.
+You can check multiple expressions together using the <code>and</code> and <code>or</code> keywords. If two expressions are joined by an <code>and</code>, they both have to be <code>True</code> for the overall expression to be <code>True</code>. If two expressions are joined by an <code>or</code>, as long as at least one is <code>True</code>, the overall expression is <code>True</code>.</p>
+
+<p>Try typing these out and see what you get:</p>
+
+<p><code>1 &gt; 0 and 1 &lt; 2</code></p>
+
+<p><code>1 &lt; 2 and "x" in "abc"</code></p>
+
+<p><code>"a" in "hello" or "e" in "hello"</code></p>
+
+<p><code>1 &lt;= 0 or "a" not in "abc"</code></p>
+
+<p>Guess what will happen when you enter these next two examples, and then type them out and see if you are correct. If you have trouble with the indenting, call over a staff member and practice together. It is important to be comfortable with indenting for tomorrow. Indenting is a crucial part of the syntax of Python.</p>
+
+<pre><code>temperature = 32
+if temperature &gt; 60 and temperature &lt; 75:
+    print("It's nice and cozy in here!")
+else:
+    print("Too extreme for me.")
+</code></pre>
+
+<pre><code>hour = 11
+if hour &lt; 7 or hour &gt; 23:
+    print("Go away!")
+    print("I'm sleeping!")
+else:
+    print("Welcome to the cheese shop!")
+    print("Can I interest you in some choice gouda?")
+</code></pre>
+
+<p>You can have as many lines of code as you want in if and else blocks; just make sure to indent them so Python knows they are a part of the block.</p>
+
+<p><strong>even more choices: elif and else</strong></p>
+
+<p>If you have more than two cases, you can use the <code>elif</code> keyword to check more cases. Think of <code>elif</code> as Python-speak for else if.  You can have as many <code>elif</code> cases as you want; Python will go down the code checking each <code>elif</code> until it finds a <code>True</code> condition or reaches the default <code>else</code> block.</p>
+
+<pre><code>sister_age = 15
+brother_age = 12
+if sister_age &gt; brother_age:
+    print("sister is older")
+elif sister_age == brother_age:
+    print("sister and brother are the same age")
+else:
+    print("brother is older")
+</code></pre>
+
+<p>You don’t have to have an <code>else</code> block, if you don’t need it. That just means there isn’t default code to execute when none of the <code>if</code> or <code>elif</code>conditions are <code>True</code>:</p>
+
+<pre><code>color = "orange"
+if color == "green" or color == "red":
+  print("Christmas color!")
+elif color == "black" or color == "orange":
+  print("Halloween color!")
+elif color == "pink":
+  print("Valentine's Day color!")
+</code></pre>
+
+<p>If color had been “purple”, that code wouldn’t have printed anything.
+<em>Remember that <code>=</code> is for assignment and <code>==</code> is for comparison.</em></p>
+
   </article>
 
 </div>
