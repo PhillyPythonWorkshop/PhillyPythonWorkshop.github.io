@@ -532,6 +532,116 @@ elif color == "pink":
 <p>If color had been “purple”, that code wouldn’t have printed anything.
 <em>Remember that <code>=</code> is for assignment and <code>==</code> is for comparison.</em></p>
 
+<h4 id="functions">Functions</h4>
+
+<p>One of the main reasons you want to write code is so your tasks can be run quickly and be automated.  Functions allow you to write reusable blocks of code. Why are functions important?</p>
+
+<ul>
+  <li>They do some useful bit of work.</li>
+  <li>They let us re-use code without having to type it out each time.</li>
+  <li>They take input and possibly produce output (we say they return a value). You can assign a variable to this output.</li>
+  <li>You call a function by using its name followed by its arguments in parenthesis.</li>
+</ul>
+
+<p>Python has many built in functions.  For example</p>
+
+<p><code>length = len("Mississippi")</code></p>
+
+<p>Executing this code assigns the length of the string “Mississippi” to the variable length.</p>
+
+<p>We can write our own functions to encapsulate bits of useful work so we can reuse them. Here’s how you do it:</p>
+
+<p><strong>Step 1: write a function signature</strong></p>
+
+<p>A function signature tells you how the function will be called. It starts with the keyword <code>def</code>, which tells Python that you are defining a function. Then comes a space, the name of your function, an open parenthesis, the comma-separated input parameters for your function, a close parenthesis, and a colon. Here’s what a function signature looks like for a function that takes no arguments:</p>
+
+<p><code>def myFunction():</code></p>
+
+<p>Here’s what a function signature looks like for a function that takes one argument called string:</p>
+
+<p><code>def myFunction(my_string):</code></p>
+
+<p>And one for a function that takes two arguments:</p>
+
+<p><code>def myFunction(myList, myInteger):</code></p>
+
+<p>Parameters should have names that usefully describe what they are used for in the function.</p>
+
+<p>We’ve used the words parameters and arguments seemingly interchangeably to reference the input to functions. The distinction isn’t really important right now, but if you’re curious: in function signatures the input is called parameters, and when you are calling the function the input is called arguments.</p>
+
+<p><strong>Step 2: do useful work inside the function</strong></p>
+
+<p>Underneath the function signature you do your useful work. Everything inside the function is indented, just like with if/else blocks, so Python knows that it is a part of the function.</p>
+
+<p>You can use the variables passed into the function as parameters, just like you can use variables once you define them outside of functions.</p>
+
+<pre><code>def add(x, y):
+    result = x + y
+</code></pre>
+
+<p><strong>Step 3: return something</strong></p>
+
+<p>If you want to be able to assign a variable to the output of a function, the function has to return that output using the <code>return</code> keyword.</p>
+
+<pre><code>def add(x, y):
+    result = x + y
+    return result
+</code></pre>
+
+<p>or, even shorter:</p>
+
+<pre><code>def add(x, y):
+    return x + y
+</code></pre>
+
+<p>You can return any Python object: numbers, strings, booleans … even other functions!</p>
+
+<p>Once you execute a return, you are done with the function – you don’t get to do any more work. That means if you have a function like this:</p>
+
+<pre><code>def absoluteValue(number):
+    if number &lt; 0:
+        return number * -1
+    return number
+</code></pre>
+
+<p>if number is less than 0, you return number * -1 and never even get to the last line of the function. However, if number is greater than or equal to 0, the if expression evaluates to False, so we skip the code in the if block and return number.</p>
+
+<p>We could have written the above function like this if we wanted. It’s the same logic, just more typing:</p>
+
+<pre><code>def absoluteValue(number):
+    if number &lt; 0:
+        return number * -1
+    else:
+        return number
+</code></pre>
+
+<p><strong>Step 4: use the function</strong></p>
+
+<p>Once you define a function you can use it as many times as you want.
+You can assign the value it returns to other variables and use those variables in other commands.</p>
+
+<pre><code>def add(x, y):
+    return x + y
+</code></pre>
+
+<pre><code>result1 = add(1234, 5678)
+print(result)
+result2 = add(-1.5, .5)
+print(result)
+print("The total sum is", result1 + result2)
+</code></pre>
+
+<p>Functions don’t have to return anything, if you don’t want them to. They usually return something because we usually want to be able to assign variables to their output.  If your function does not return anything, you won’t be able to assign a variable to its output and won’t be able to use its output anywhere else.</p>
+
+<p>What do you think will happen here?  Try it and see:</p>
+
+<pre><code>def half_number(x):
+    print(x/2)
+half1 = half_number(20)
+print(half1)
+</code></pre>
+
+
   </article>
 
 </div>
