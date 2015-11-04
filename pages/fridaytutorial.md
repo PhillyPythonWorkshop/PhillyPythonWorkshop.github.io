@@ -236,3 +236,45 @@ print(2.0 * 123 + str(2.0) * 123)
 
 Let's take a break.  We've covered a lot!
 
+
+
+####Comments and new lines
+
+Copy and paste the following code into a new file and save it as `mayors.py`.
+
+~~~
+# The pound sign is used as a comment character in Python. Programmers
+# use comments to annotate code. Python ignores everything after the
+# comment character on a line.
+
+# Notice how the 'print' command has been inserting a new line at the
+# end of our strings.
+print("The last three  mayors of Philadelphia were:")
+# We can insert newlines ourselves, using "\n".
+print("Michael Nutter\nJohn Street\Ed Rendell")
+
+# "" Is the empty string. Since the print command will insert a
+# newline at the end, this will print a newline by itself:
+print ""
+
+# Here's a new kind of printing: you can use triple quotes to create
+# multiline strings.
+print("""Jim Kenney was elected Mayor
+of Philadelphia on November 3, 2015, beating 
+Republican challenger Melissa Murray Bailey.""")
+
+print("")
+
+# When you use triple quotes, whitespace is preserved.
+print("""Jim Kenney received
+    84% of the 
+        popular vote""")
+~~~
+
+Open this script from the command line and study what happens.
+
+**Do you know how to do these things?**
+: How do you comment code in Python?
+: How do you print just a newline?
+: How do you print a multi-line string so that whitespace is preserved?
+
