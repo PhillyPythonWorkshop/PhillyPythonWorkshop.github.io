@@ -121,7 +121,7 @@
   <li>typing in the following and then pressing <code>enter</code>:</li>
 </ol>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">xcode-select --install</code></pre></figure>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">xcode-select --install</code></pre></div>
 
 <p>If you get a message that looks like the following, you’re already ready to go, otherwise it will begin the installation.</p>
 
@@ -144,7 +144,7 @@
   <li>Copy and paste the following into the command window and press <code>enter</code></li>
 </ol>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ruby -e <span class="s2">"</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">"</span></code></pre></figure>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">ruby -e <span class="s2">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span></code></pre></div>
 
 <p>During this process, you will prompted for your password (again, you’ll need to have administrative priveleges). Don’t worry if characters don’t show up as you type; that’s just how it keeps your password hidden from others’ prying eyes :) !</p>
 
@@ -152,15 +152,15 @@
 
 <p>With Homebrew now installed, you can install <code>python3</code> with the following command in the <code>Terminal</code>.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">brew install python3</code></pre></figure>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">brew install python3</code></pre></div>
 
 <h1 id="testing-the-installation">Testing the installation</h1>
 
-<p>You can test that your installation went well by running the <code>python3</code> interpreter in the <code>Terminal</code>.</p>
+<p>You can test that your installation went well by running the <code>python3</code> interpreter in the <code>Terminal</code>. </p>
 
 <p>Enter the following into the terminal and press <code>enter</code>:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">python3</code></pre></figure>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">python3</code></pre></div>
 
 <p>You should then see something like,</p>
 
@@ -174,7 +174,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 <ul>
   <li>The <code>&gt;&gt;&gt;</code> indicates that you are at a Python prompt.</li>
-  <li>You can exit the Python prompt by typing <code>exit()</code> and pressing enter or by using <code>CTRL+d</code>.</li>
+  <li>You can exit the Python prompt by typing <code>exit()</code> and pressing enter or by using <code>CTRL+d</code>. </li>
   <li>Practice doing this a few times until you are comfortable entering and exiting the Python shell.</li>
 </ul>
 
@@ -184,7 +184,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 <p><a href="http://www.sublimetext.com/3">Download it from here</a></p>
 
-<p>Once downloaded, install it as you would any other OS X application. Being explicit, this means double-clicking the downloaded <code>dmg</code> file, letting it open up, and subsequently dragging the <code>Sublime Text</code> application into your <code>Applications</code> folder.</p>
+<p>Once downloaded, install it as you would any other OS X application. Being explicit, this means double-clicking the downloaded <code>dmg</code> file, letting it open up, and subsequently dragging the <code>Sublime Text</code> application into your <code>Applications</code> folder. </p>
 
 <h1 id="practice-navigating-the-computer-from-a-terminal">Practice navigating the computer from a Terminal</h1>
 
@@ -206,43 +206,43 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 <p>Type each of these commands and hit <code>enter</code>:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ls</code></pre></figure>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">ls</code></pre></div>
 
 <p>This lists all the files in your home directory.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">pwd</span></code></pre></figure>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">pwd</span></code></pre></div>
 
 <p>This displays the full directory path to your current directory, which is your home directory.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /</code></pre></figure>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /</code></pre></div>
 
 <p>This will change you into the <code>/</code> (root) directory.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ls</code></pre></figure>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">ls</code></pre></div>
 
 <p>This lists the contents of the <code>/</code> (root) directory.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>Users</code></pre></figure>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>Users</code></pre></div>
 
 <p>This will change you into the home subdirectory of the <code>/</code> (root) directory.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ls</code></pre></figure>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">ls</code></pre></div>
 
 <p>You should see a list of all the computer’s users’ home directories (and possibly a Shared folder).</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">pwd</span></code></pre></figure>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">pwd</span></code></pre></div>
 
 <p>This displays the full directory path to your current directory, which in this case is <code>/Users</code>.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ..</code></pre></figure>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ..</code></pre></div>
 
 <p><code>..</code> is a relative location meaning “parent directory”. You were in <code>/Users</code>, so now you have moved up to your “parent”, <code>/</code>, the root directory.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ls</code></pre></figure>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">ls</code></pre></div>
 
 <p>This lists the contents of the root directory, confirming where you are.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~</code></pre></figure>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~</code></pre></div>
 
 <p>Just like how <code>..</code> means “parent directory”, <code>~</code> means “home” directory. When you execute this command, you’ll change back to your home directory, where all your user files are.</p>
 
@@ -287,7 +287,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 <p>Download the <a href="https://github.com/PhillyPythonWorkshop/Wordplay/archive/master.zip">Wordplay Project</a>.</p>
 
-<p>Download the <a href="https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip">Colorwall Project</a> for Python 3.</p>
+<p>Download the <a href="https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip">Colorwall Project</a> for Python 3.  </p>
 
 <h1 id="practice-with-coding-bat">Practice with Coding Bat</h1>
 <p>Coding Bat practice</p>
