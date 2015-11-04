@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Friday Setup - Linux</title>
+  <title>Friday Setup - Mac</title>
   <meta name="description" content="Philly Python Workshop is part of the Philadelphia Python Users Group and runs introductory Python workshops.
 ">
 
@@ -56,7 +56,7 @@
           
         
           
-          <a class="page-link" href="/frisetupmac/">Friday Setup - Linux</a>
+          <a class="page-link" href="/frisetupmac/">Friday Setup - Mac</a>
           
         
           
@@ -102,13 +102,199 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Friday Setup - Linux</h1>
+    <h1 class="post-title">Friday Setup - Mac</h1>
   </header>
 
   <article class="post-content">
-    <p>Here’s what you need to do to set up your Mac machine.</p>
+    <p>While Macs come with Python 2.7.x pre-installed, we’ll be working with Python 3 during this session so there’s some light installation ahead of us. This will require administrative priveleges to your computer since the python installation is usually done to protected directories.</p>
 
-<p>(Coming soon!)</p>
+<p>Along the way, we’ll also set up a more advanced text editor that will help us by providing some really specific programming features.</p>
+
+<h1 id="installing-the-command-line-tools">Installing the Command-Line Tools</h1>
+
+<p>If you don’t have the command line tools provided by Apple already set up, you’ll need to do that.</p>
+
+<p>You can check whether you have them already by:</p>
+
+<ol>
+  <li>opening <code>Terminal</code> (you can find it in your <code>Utilities</code> directory inside of <code>Applications</code>)</li>
+  <li>typing in the following and then pressing <code>enter</code>:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">xcode-select --install</code></pre></figure>
+
+<p>If you get a message that looks like the following, you’re already ready to go, otherwise it will begin the installation.</p>
+
+<pre><code>xcode-select: error: command line tools are already installed, use "Software Update" to install updates
+</code></pre>
+
+<p><strong>Backup method if the first doesn’t work:</strong></p>
+
+<ol>
+  <li>Go <a href="https://developer.apple.com/downloads/index.action">here</a> after logging in with any AppleID</li>
+  <li>Select and download the “Command Line Tools” for your respective version of OS X</li>
+</ol>
+
+<h1 id="installing-homebrew">Installing Homebrew</h1>
+
+<p><a href="http://brew.sh">Homebrew</a> is a <a href="https://en.wikipedia.org/wiki/Package_manager">package manager</a> for Mac. It will help us quickly install Python 3.</p>
+
+<ol>
+  <li>Open up the <code>Terminal</code> application (if you haven’t already)</li>
+  <li>Copy and paste the following into the command window and press <code>enter</code></li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ruby -e <span class="s2">"</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">"</span></code></pre></figure>
+
+<p>During this process, you will prompted for your password (again, you’ll need to have administrative priveleges). Don’t worry if characters don’t show up as you type; that’s just how it keeps your password hidden from others’ prying eyes :) !</p>
+
+<h1 id="installing-python3">Installing python3</h1>
+
+<p>With Homebrew now installed, you can install <code>python3</code> with the following command in the <code>Terminal</code>.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">brew install python3</code></pre></figure>
+
+<h1 id="testing-the-installation">Testing the installation</h1>
+
+<p>You can test that your installation went well by running the <code>python3</code> interpreter in the <code>Terminal</code>.</p>
+
+<p>Enter the following into the terminal and press <code>enter</code>:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">python3</code></pre></figure>
+
+<p>You should then see something like,</p>
+
+<pre><code>Python 3.5.0 (default, Sep 14 2015, 02:37:27) 
+[GCC 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.53)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; 
+</code></pre>
+
+<p>While inside the python interpreter:</p>
+
+<ul>
+  <li>The <code>&gt;&gt;&gt;</code> indicates that you are at a Python prompt.</li>
+  <li>You can exit the Python prompt by typing <code>exit()</code> and pressing enter or by using <code>CTRL+d</code>.</li>
+  <li>Practice doing this a few times until you are comfortable entering and exiting the Python shell.</li>
+</ul>
+
+<h1 id="installing-a-text-editor-sublime">Installing a Text Editor (Sublime)</h1>
+
+<p>While you can absolutely write python code in any text editor, it is a lot easier to use one that is aware of code content and provides relevant features. To that end, we’ll be using Sublime Text 3. While there are a multitude of other options, Sublime 3 provides a good blend of simplicity and functionality.</p>
+
+<p><a href="http://www.sublimetext.com/3">Download it from here</a></p>
+
+<p>Once downloaded, install it as you would any other OS X application. Being explicit, this means double-clicking the downloaded <code>dmg</code> file, letting it open up, and subsequently dragging the <code>Sublime Text</code> application into your <code>Applications</code> folder.</p>
+
+<h1 id="practice-navigating-the-computer-from-a-terminal">Practice navigating the computer from a Terminal</h1>
+
+<p>The way your computer organizes storage is called a filesystem. This filesystem is organized like a tree with folders (also called <code>directories</code>) and <code>files</code>. The highest point in the tree is the <em>root</em> directory located at <code>/</code>. Everything you can access on your computer lives within the sub-directories of this root directory.</p>
+
+<p>We often navigate the filesystem graphically (using Finder) where we can click and move deeper and across this directory tree. We can do that exact same navigation from the command line.</p>
+
+<p>To do this, there are three commands that we’ll be using:</p>
+
+<ul>
+  <li><code>ls</code>  lists the contents of a directory</li>
+  <li><code>pwd</code>  shows you the full path to your current directory (it stands for “print working directory”)</li>
+  <li><code>cd</code>  moves you into a new directory (it stands for “change directory”).</li>
+</ul>
+
+<h2 id="lets-practice-using-these-commands">Let’s practice using these commands.</h2>
+
+<p>Open up a Terminal. (hint: it’s in <code>Applications/Utilities</code>)</p>
+
+<p>Type each of these commands and hit <code>enter</code>:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ls</code></pre></figure>
+
+<p>This lists all the files in your home directory.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">pwd</span></code></pre></figure>
+
+<p>This displays the full directory path to your current directory, which is your home directory.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /</code></pre></figure>
+
+<p>This will change you into the <code>/</code> (root) directory.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ls</code></pre></figure>
+
+<p>This lists the contents of the <code>/</code> (root) directory.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>Users</code></pre></figure>
+
+<p>This will change you into the home subdirectory of the <code>/</code> (root) directory.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ls</code></pre></figure>
+
+<p>You should see a list of all the computer’s users’ home directories (and possibly a Shared folder).</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">pwd</span></code></pre></figure>
+
+<p>This displays the full directory path to your current directory, which in this case is <code>/Users</code>.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ..</code></pre></figure>
+
+<p><code>..</code> is a relative location meaning “parent directory”. You were in <code>/Users</code>, so now you have moved up to your “parent”, <code>/</code>, the root directory.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ls</code></pre></figure>
+
+<p>This lists the contents of the root directory, confirming where you are.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~</code></pre></figure>
+
+<p>Just like how <code>..</code> means “parent directory”, <code>~</code> means “home” directory. When you execute this command, you’ll change back to your home directory, where all your user files are.</p>
+
+<h4 id="tips">Tips</h4>
+
+<ol>
+  <li>
+    <p>You can use <code>tab</code> to auto-complete directories, files, and programs. So from inside the root directory <code>/</code>, if you type <code>cd Us</code> and press the <code>tab</code> key, the command prompt will auto-complete the directory name, and you can then hit <code>enter</code> to change into the <code>/Users</code> directory.</p>
+  </li>
+  <li>
+    <p>The command prompt maintains a command history. You can use the up arrow to cycle through old commands. You can also see a list of your history by using the <code>history</code> command.</p>
+  </li>
+  <li>
+    <p>If you’d like to open a Finder window wherever you are in the Terminal, you can use the <code>open .</code> command. Turns out <code>.</code> is another “special place” that means “the current directory”. So this command opens the current directory, which OS X generally does with the help of Finder.</p>
+  </li>
+  <li>
+    <p>If you’d like to change to a specific location in the Terminal, and you have a Finder window open already to that place, you can type in <code>cd </code> to the Terminal, drag the little blue folder at the top of the Finder window into the Terminal, and then press <code>enter</code>.</p>
+  </li>
+</ol>
+
+<h4 id="check-your-understanding">Check your understanding</h4>
+
+<p>Answer these questions. Experiment at the command line if you need to! If you aren’t sure about an answer, ask a helper.</p>
+
+<ul>
+  <li>What directory are you in after starting a new command line prompt?</li>
+  <li>After starting a new command line prompt, how would you get to the root directory?</li>
+  <li>How do you check what files and directories are in your current working directory?</li>
+  <li>If you are in directory <code>/</code>, and you want to get to <code>/Users/Shared/</code>, how would you do that?</li>
+  <li>What are 2 ways to avoid typing out a full navigation command? (hint: one requires that you’ve run the command before)</li>
+  <li>What is the difference between a command prompt and a Python prompt?</li>
+</ul>
+
+<h4 id="success">Success!</h4>
+
+<p>You’ve practiced using <code>ls</code> and <code>cd</code> to navigate your computer’s filesystem using Terminal.</p>
+
+<h1 id="start-learning-python">Start learning Python!</h1>
+<p>Go through this <a href="/fridaytutorial/">self-directed tutorial</a> to start learning to read and write in Python. These concepts will be reviewed in the Saturday lesson, along with some more advanced topics.</p>
+
+<h1 id="get-dependencies-installed-for-the-projects">Get dependencies installed for the projects</h1>
+
+<p>Download the <a href="https://github.com/PhillyPythonWorkshop/Wordplay/archive/master.zip">Wordplay Project</a>.</p>
+
+<p>Download the <a href="https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip">Colorwall Project</a> for Python 3.</p>
+
+<h1 id="practice-with-coding-bat">Practice with Coding Bat</h1>
+<p>Coding Bat practice</p>
+
+<h1 id="checkoff">Checkoff</h1>
+<p>Have an instructor or assistant <a href="/fridaycheckoff/">check you off</a>.</p>
+
 
   </article>
 
