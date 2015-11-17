@@ -52,4 +52,13 @@ permalink: /saturdaylesson/
 * random.randint
 * random.choice
 
-###walk through state_capitals.py
+###Let's put it all together.
+
+Walk through state_capitals.py
+* create a dictionary of states & capitals 
+* import a module
+* write a while loop 
+* select a random key and value from the list
+* take user input to guess state capital
+* evaluate user's input & respond
+* allow user to end game
