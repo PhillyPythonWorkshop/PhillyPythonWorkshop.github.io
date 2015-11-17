@@ -55,6 +55,7 @@ permalink: /saturdaylesson/
 ###Let's put it all together.
 
 Walk through state_capitals.py
+
 * create a dictionary of states & capitals 
 * import a module
 * write a while loop 
