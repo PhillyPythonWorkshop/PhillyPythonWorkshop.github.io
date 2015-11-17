@@ -54,7 +54,7 @@ permalink: /saturdaylesson/
 
 ###Let's put it all together.
 
-Walk through state_capitals.py
+Walk through [state_capitals.py](https://raw.githubusercontent.com/PhillyPythonWorkshop/PhillyPythonWorkshop.github.io/master/misc/state_capitals.py)
 
 * create a dictionary of states & capitals 
 * import a module
