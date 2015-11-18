@@ -198,7 +198,7 @@ There's another useful function that works on strings called `len()`.  This retu
 
 `president = "Obama"`
 
-`len(ice_cream)`
+`len(president)`
 
 ####Quotes
 
