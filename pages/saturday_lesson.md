@@ -23,7 +23,12 @@ permalink: /saturdaylesson/
 * adding elements
 * changing elements
 * slicing lists
-* strings are like lists
+
+###tuples
+
+* like lists but immutable
+* can perform all the same operations except changing elements
+* strings are like tuples - can slice, access elements, can not change elements
 
 ###loops and more flow control
 * for loops
