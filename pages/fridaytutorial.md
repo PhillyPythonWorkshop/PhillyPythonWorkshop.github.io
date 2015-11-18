@@ -48,9 +48,9 @@ Division uses the `/` symbol.
 
 To get just the whole number in Python 3, use this syntax:
 
-`16/5`
+`16//5`
 
-`50/4`
+`50//4`
 
 
 ####Modulus
