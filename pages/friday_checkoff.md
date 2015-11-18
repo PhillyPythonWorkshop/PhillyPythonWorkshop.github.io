@@ -14,6 +14,6 @@ When you're ready, let an instructor or assistant know.  Together you will go th
 3. Open your text editor and press `Tab`. Use the left arrow key to go back in that line and show that your text editor is using spaces to indent, not tabs.  
 4.  Test the Wordplay and ColorWall installations.
 * Navigate to the Wordplay directory.  Run the `words1.py` script from your computer's terminal.  You should see a list of words that have two consecutive letter u's.
-* Navigate to the Colorwall direcotyr. Run the `run.py` script from your computer's terminal.  You should see a grid with color animations that lasts about a minute.
+* Navigate to the Colorwall directory. Run the `run.py` script from your computer's terminal.  You should see a grid with color animations that lasts about a minute.
 5.  Show the instructor a practice exercise that seemed particularly challenging and how you worked it out.
 
