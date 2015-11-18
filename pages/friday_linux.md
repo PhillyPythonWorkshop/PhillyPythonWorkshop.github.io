@@ -12,7 +12,25 @@ Most Linux machines have both Python 2 and Python 3 pre-installed.  Open a Termi
 
 #Prepare a text editor
 
-Here is how you set up a text editor.
+While you can absolutely write python code in any text editor, it is a lot easier to use one that is aware of code content and provides relevant features. To that end, we'll be using Sublime Text 3. While there are a multitude of other options, Sublime 3 provides a good blend of simplicity and functionality.
+
+[Download it from here](http://www.sublimetext.com/3)
+
+Install as you would any other program.
+
+Be sure that you've set tabs equal to 4 spaces and the tabs to spaces setting is set to True.  Edit the file under "Preferences" -- "Settings - Default": 
+
+~~~
+    // The number of spaces a tab is considered equal to
+    "tab_size": 4,
+
+    // Set to true to insert spaces when tab is pressed
+    "translate_tabs_to_spaces": true,
+
+~~~
+
+This ensures that when you hit the Tab button on your keyboard, your text editor will do the equivalent of typing four spaces.
+
 
 #Practice starting & exiting the Python shell
 
