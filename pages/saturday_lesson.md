@@ -89,4 +89,4 @@ def roll_two():
 
 ####Exercise 2 (individual work)
 
-Write a function that takes a list as an argument and returns a random item from that list - simulating drawing a person's name from a hat.  Save the file and run it inside your Python interpreter.
+Write a function that takes one argument.  If the argument is a list, it returns a random item from that list - simulating drawing a person's name from a hat.  If the argument is not a list, it returns the message "The argument must be a list." Save the file and run it inside your Python interpreter.
