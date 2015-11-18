@@ -57,8 +57,8 @@ permalink: /saturdaylesson/
         * math.pi
         * math.sqrt()    
     * random
-        * random.randint
-        * random.choice
+        * random.randint()
+        * random.choice()
 
 ###Let's put it all together.
 
