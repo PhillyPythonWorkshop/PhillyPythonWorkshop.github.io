@@ -264,7 +264,7 @@ Copy and paste the following code into a new file and save it as `mayors.py`.
 
 # Notice how the 'print' command has been inserting a new line at the
 # end of our strings.
-print("The last three  mayors of Philadelphia were:")
+print("The last three mayors of Philadelphia were:")
 # We can insert newlines ourselves, using "\n".
 print("Michael Nutter\nJohn Street\Ed Rendell")
 
@@ -286,9 +286,15 @@ print("""Jim Kenney received
         popular vote""")
 ~~~
 
-Open this script from the command line and study what happens.
+So far, we've been running code directly from the shell interpreter.  This is great for testing and short bits of code but for longer projects we want to save our script in a file and run it from our computer's terminal.  Open your computer's terminal (not the Python shell) and navigate to the directory where you saved this file.  At your computer's command prompt type
+
+`python3 mayors.py`
+
+to run this script.  Study what happens.  Edit this so it displays the last four mayors of Philadelphia. (Look it up on [Wikipedia](https://en.wikipedia.org/wiki/List_of_mayors_of_Philadelphia) if you need to!).  Save it and run it again.
+
 
 **Do you know how to do these things?**
+: How do you run a Python script from your computer's terminal?
 : How do you comment code in Python?
 : How do you print just a newline?
 : How do you print a multi-line string so that whitespace is preserved?
