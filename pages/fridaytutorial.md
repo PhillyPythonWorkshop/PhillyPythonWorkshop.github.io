@@ -44,7 +44,22 @@ Division uses the `/` symbol.
 
 `16/5`
 
-> Note: If you've used Python 2, you'll see that division works differently in Python 3.  Python 2 uses floor division for integers, meaning it will return only the whole number part of the answer. Python 3 performs true division, returning the real or true value of the division.
+> Note: If you've used Python 2, you'll see that division works differently in Python 3.  Python 2 uses floor division for integers, meaning it will return only the whole number part of the answer.  Python 3 performs true division, returning the real or true value of the division.  
+
+To get just the whole number in Python 3, use this syntax:
+
+`16/5`
+
+`50/4`
+
+
+####Modulus
+Thinking back to long division you may have learned in school, the modulus is the "remainder" after perfoming division.  It uses the `%` symbol.
+
+`16%5`
+
+`50%4`
+
 
 ####Order of Operations
 
@@ -72,7 +87,7 @@ We used the term 'function' without explaining what it is -- we'll talk about fu
 So in this case 'type' is the name of the function, and it takes one argument; in the example we first give type an argument of 1 and then give it an argument of 1.0.
 
 
-*Stop for a moment here and try pressing the up arrow on your keyboard a few times.  The Python interpreter saves a history of what you've entered, so you can arrow up to old commands and hit Return to re-run them -- just like your computer's command prompt!  (Note, however, tab completion is not built into the Python shell.)*{: style="color: blue"}
+*Stop for a moment here and try pressing the up arrow on your keyboard a few times.  The Python interpreter saves a history of what you've entered, so you can arrow up to old commands and hit Return to re-run them -- just like your computer's command prompt!  *{: style="color: blue"}
 
 ###Variables
 
