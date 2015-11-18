@@ -53,9 +53,12 @@ permalink: /saturdaylesson/
 * purpose
 * builtins
 * imports
-* import random
-* random.randint
-* random.choice
+    * math
+        * math.pi
+        * math.sqrt()    
+    * random
+        * random.randint
+        * random.choice
 
 ###Let's put it all together.
 
