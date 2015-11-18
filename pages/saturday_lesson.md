@@ -34,7 +34,7 @@ permalink: /saturdaylesson/
 * infinite loops
 * if statements inside while loops
 * break
-* raw_input()
+* input()
 
 ###dictionaries
 * purpose
