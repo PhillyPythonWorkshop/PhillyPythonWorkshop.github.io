@@ -63,3 +63,25 @@ Walk through [state_capitals.py](https://raw.githubusercontent.com/PhillyPythonW
 * take user input to guess state capital
 * evaluate user's input & respond
 * allow user to end game
+
+
+###Practice exercises
+
+####Exercise 1 (as a class)
+
+Write a function that simulates the roll of two standard six sided die. 
+Save it to a file called dice_roll.  Open a Python interpreter and import dice_roll.  Run the function inside your Python interpreter.
+
+~~~
+import random
+
+def roll_two():
+    #get one random number between 1 and 6
+    #get another random number between 1 and 6
+    #add them together
+    #return the result
+~~~
+
+####Exercise 2 (individual work)
+
+Write a function that takes a list as an argument and returns a random item from that list - simulating drawing a person's name from a hat.  Save the file and run it inside your Python interpreter.
