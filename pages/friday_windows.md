@@ -205,8 +205,8 @@ Download the [Wordplay Project](https://github.com/PhillyPythonWorkshop/Wordplay
 
 Download the [Colorwall Project](https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip) for Python 3.  
 
-#Practice with Coding Bat
-Coding Bat practice
+#Practice
+Try some [practice exercises](/practice/).  If you've been working on any other tutorials, feel free to go to those too, and ask an instructor to help anywhere you get stuck.
 
 #Checkoff
 Have an instructor or assistant [check you off](/fridaycheckoff/).
