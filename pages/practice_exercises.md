@@ -8,7 +8,7 @@ Here are some tutorials and exercises to practice your new Python skills.
 
 ####Exercises and tutorials in Python 3
 
-[Interactive Python](http://interactivepython.org/)
+[Interactive Python](http://interactivepython.org/runestone/static/thinkcspy/toc.html)
 This includes some theory as well as some practical exercises.
 
 [Python Tutorial from University of Waterloo](http://cscircles.cemc.uwaterloo.ca/dev/)
