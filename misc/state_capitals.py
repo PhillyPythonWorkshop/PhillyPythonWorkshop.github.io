@@ -54,7 +54,7 @@ capitals_dict = {
 import random
 
 while True:
-    state = random.choice(capitals_dict.keys())
+    state = random.choice(list(capitals_dict.keys()))
     capital = capitals_dict[state]
     capital_guess = input("What is the capital of " + state + "? ")
     if capital_guess == "Exit":
