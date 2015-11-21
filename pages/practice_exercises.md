@@ -33,7 +33,7 @@ print("Hello World")
 ~~~ 
 
 
-[Coding Bat](http://codingbat.com/home/bostonpythonworkshop@gmail.com/)
+[Coding Bat](http://codingbat.com/python)
 
 This is a series of short Python exercises that are great for quick practice. Create an account & log in to track your progress and access additional exercises.
 
