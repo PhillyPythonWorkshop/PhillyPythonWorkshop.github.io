@@ -35,7 +35,7 @@ print("Hello World")
 
 [Coding Bat](http://codingbat.com/home/bostonpythonworkshop@gmail.com/)
 
-These exercises have been curated by the Boston Python Workshop as a good introduction.  Create an account & log in to track your progress and access additional exercises.
+This is a series of short Python exercises that are great for quick practice. Create an account & log in to track your progress and access additional exercises.
 
 [Codecademy](http://www.codecademy.com/courses/python-beginner-en-kSQwt/0/1)
 
