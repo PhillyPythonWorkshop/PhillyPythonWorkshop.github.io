@@ -492,7 +492,7 @@ A function signature tells you how the function will be called. It starts with t
 
 `def myFunction():`
 
-Here's what a function signature looks like for a function that takes one argument called string:
+Here's what a function signature looks like for a function that takes one argument called my_string:
 
 `def myFunction(my_string):`
 
