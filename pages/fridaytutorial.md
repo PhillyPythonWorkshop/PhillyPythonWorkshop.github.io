@@ -266,7 +266,7 @@ Copy and paste the following code into a new file and save it as `mayors.py`.
 # end of our strings.
 print("The last three mayors of Philadelphia were:")
 # We can insert newlines ourselves, using "\n".
-print("Michael Nutter\nJohn Street\Ed Rendell")
+print("Michael Nutter\nJohn Street\nEd Rendell")
 
 # "" Is the empty string. Since the print command will insert a
 # newline at the end, this will print a newline by itself:
