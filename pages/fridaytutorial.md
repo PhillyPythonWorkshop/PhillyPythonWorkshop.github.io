@@ -270,7 +270,7 @@ print("Michael Nutter\nJohn Street\Ed Rendell")
 
 # "" Is the empty string. Since the print command will insert a
 # newline at the end, this will print a newline by itself:
-print ""
+print("")
 
 # Here's a new kind of printing: you can use triple quotes to create
 # multiline strings.
