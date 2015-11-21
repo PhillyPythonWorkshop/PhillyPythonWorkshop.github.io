@@ -586,7 +586,7 @@ half1 = half_number(20)
 print(half1)
 ~~~
 
-
+That's it for this evening! Now you can take some time to try some of the [practice exercises](http://phillypythonworkshop.github.io/practice/) and review anything here that seemed challenging.  We'll review all this and get deeper into Python during Saturday's presentation.
 
 
 
