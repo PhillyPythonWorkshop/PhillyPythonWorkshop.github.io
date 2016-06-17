@@ -105,8 +105,23 @@ While you can absolutely write python code in any text editor, it is a lot easie
 
 Install as you would any other program.
 
-Be sure that you've set tabs equal to 4 spaces and the tabs to spaces setting is set to True.  Edit the file under "Preferences" -- "Settings - Default": 
+Be sure that you've set tabs equal to 4 spaces and the tabs to spaces setting is set to True.  Add the lines below to the file under "Preferences" -- "Settings - User". Make sure that it is inside the curly braces at the top of your file.
 
+~~~
+{
+
+    // The number of spaces a tab is considered equal to
+    "tab_size": 4,
+
+    // Set to true to insert spaces when tab is pressed
+    "translate_tabs_to_spaces": true,
+
+
+    ... rest of file
+
+}
+
+~~~
 ~~~
     // The number of spaces a tab is considered equal to
     "tab_size": 4,
