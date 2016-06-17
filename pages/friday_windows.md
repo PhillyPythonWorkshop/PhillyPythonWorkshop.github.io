@@ -20,7 +20,7 @@ If you already think you have Python 3 installed, please check with a staff memb
 
 3. At the command prompt (it should look like  `C:\`) type 
 ```
-python34/python.exe
+python34\python.exe
 ```
 You should see something that looks like this:
 
