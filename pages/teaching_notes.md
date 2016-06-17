@@ -1,29 +1,33 @@
-math
-adding
-subtracting
-multiplying
-dividing – NOTE DIFF b/t 2 & 3 – real & floor
-modulus
+### math  
+* adding
+* subtracting
+* multiplying
+* dividing – NOTE DIFF b/t 2 & 3 – real & floor
+* modulus
 
 
-strings
-enclosed in quotes – single or double, just be consistent
-think of as text but they can hold anything, just get treated as text
-things you can do with strings
-len()
-concatenate, multiply
+### strings
+* enclosed in quotes – single or double, just be consistent
+* think of as text but they can hold anything, just get treated as text
+
+#### things you can do with strings
+* len()
+* concatenate
+* multiply
+
 Let's look at documentation – Google is your friend.  Look up “Python string methods” – just like any research, you have to think a little about how to frame your question.  Be sure you're looking at the right version in the Python docs.
-	 	x='hello'
-		x.captitalize()
-		x.center(15)
-		x.center(15,'*')
-		x.isalnum()   *we'll get to what that true/false means in a bit
+* x='hello'
+* x.captitalize()
+* x.center(15)
+* x.center(15,'*')
+* x.isalnum()   *we'll get to what that true/false means in a bit
 
-variables
-Think of them as names/holders for values
-= is used to assign a variable to value
-can be assigned to any kind of value – strings, numbers, other data types we'll see later
-can be reassigned
+### variables
+
+* Think of them as names/holders for values
+* = is used to assign a variable to value
+* can be assigned to any kind of value – strings, numbers, other data types we'll see later
+* can be reassigned
 
 
 booleans
