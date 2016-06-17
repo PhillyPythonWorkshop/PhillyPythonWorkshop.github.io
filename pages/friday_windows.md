@@ -136,7 +136,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 * Practice doing this a few times until you are comfortable entering and exiting the Python shell.
 
 
-#Practice navigating the computer from a command prompt
+# Practice navigating the computer from a command prompt
 
 
 The filesystem on your computer is like a tree made up of folders (also called "directories") and files. The filesystem has a root directory called `/`, and everything on your computer lives in subdirectories of this root directory.
