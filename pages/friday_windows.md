@@ -6,7 +6,7 @@ permalink: /frisetupwindows/
 
 Here's what you need to do to set up your Windows machine.
 
-#Download and Install Python
+# Download and Install Python
 If you already think you have Python 3 installed, please check with a staff member before completing these instructions.
 
 1.  Click on [this download link](https://www.python.org/ftp/python/3.4.3/python-3.4.3.msi) and choose "run" if you have the option to do so. Otherwise, save it to your computer and double click to start the installer.  Follow the instructions to complete the installation.
@@ -97,7 +97,7 @@ Exit the Python prompt by typing `exit()` and hitting enter.
 Now you're back at the Windows command prompt `(C:\)`.
 
 
-#Prepare a text editor
+# Prepare a text editor
 
 While you can absolutely write python code in any text editor, it is a lot easier to use one that is aware of code content and provides relevant features. To that end, we'll be using Sublime Text 3. While there are a multitude of other options, Sublime 3 provides a good blend of simplicity and functionality.
 
@@ -119,7 +119,7 @@ Be sure that you've set tabs equal to 4 spaces and the tabs to spaces setting is
 This ensures that when you hit the Tab button on your keyboard, your text editor will do the equivalent of typing four spaces.
 
 
-#Practice starting & exiting the Python shell
+# Practice starting & exiting the Python shell
 
 * Open a command prompt.
 * To start Python, type `python3` at the command prompt and hit enter. You should see something like
@@ -176,13 +176,13 @@ Type each of these commands and hit enter:
 `dir`
 *This lists the contents of the current directory (root).*
 
-####Tips
+#### Tips
 
 You can use Tab to auto-complete directory and file names. So from inside the root directory, if you type `cd Use` and hit Tab, the command prompt will auto-complete the directory name, and you can then hit enter to change into the `C:\Users` directory.
 The command prompt maintains a command history. You can use the up arrow to cycle through old commands.
 Note that the text that makes up the command prompt changes as you move around directories. The command prompt will always give the full directory path to your current directory.
 
-####Check your understanding
+#### Check your understanding
 
 Answer these questions. Experiment at the command line if you need to! If you aren't sure about an answer, ask a helper.
 
@@ -196,17 +196,17 @@ Answer these questions. Experiment at the command line if you need to! If you ar
 #### Success!
 You've practiced using dir and cd to navigate your computer's filesystem from the command prompt.
 
-#Start learning Python!
+# Start learning Python!
 Go through this [self-directed tutorial](/fridaytutorial/) to start learning to read and write in Python. These concepts will be reviewed in the Saturday lesson, along with some more advanced topics.
 
-#Get dependencies installed for the projects
+# Get dependencies installed for the projects
 
 Download the [Wordplay Project](https://github.com/PhillyPythonWorkshop/Wordplay/archive/master.zip).
 
 Download the [Colorwall Project](https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip) for Python 3.  
 
-#Practice
+# Practice
 Try some [practice exercises](/practice/).  If you've been working on any other tutorials, feel free to go to those too, and ask an instructor to help anywhere you get stuck.
 
-#Checkoff
+# Checkoff
 Have an instructor or assistant [check you off](/fridaycheckoff/).
