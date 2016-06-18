@@ -382,47 +382,51 @@ int(x)
 ~~~
 
 
-dictionaries
+### Dictionaries
 
 
-initialization
+Initialization: 
 
-key – value pairs.  Unordered.  In curly braces.
-Random is still a type of ordering.  Here order is irrelevant.
-So you can't get elements by position.  You get them by keys.
-Keys must be unique, values don't have to be.
+* key – value pairs, separated by : .  Unordered.  In curly braces.
+* Random is still a type of ordering.  Here order is irrelevant.
+* So you can't get elements by position.  You get them by keys.
+* Keys must be unique, values don't have to be.
 
-accessing elements
+Accessing elements
+
+~~~
+scores = {'ali':45, 'bob':34, 'cam':65, 'dev':12, 'eli':21} 
+print(scores) 
+scores['bob'] 
+~~~
 
 
->>> scores = {'ali':45, 'bob':34, 'cam':65, 'dev':12, 'eli':21} 
->>> scores 
-{'eli': 21, 'bob': 34, 'cam': 65, 'dev': 12, 'ali': 45} 
->>> scores['bob'] 
-34 
+Adding elements
 
-
-adding elements
-You can't just append – there is no specified beginning or end.
-
->>> scores['flo'] = 87 
->>> scores 
-{'eli': 21, 'cam': 65, 'flo': 87, 'dev': 12, 'bob': 34, 'ali': 45} 
+* You can't just append – there is no specified beginning or end.
+~~~
+scores['flo'] = 87 
+print(scores) 
+~~~
 
 changing elements
-scores[eli] = 88
 
+~~~
+scores[eli] = 88
+~~~
 
 keys() and values()
->>> scores.keys() 
-dict_keys(['eli', 'cam', 'flo', 'dev', 'bob', 'ali']) 
->>> scores.values() 
-dict_values([90, 65, 87, 12, 34, 45]) 
->>> 
 
-See the order is NOT the same
+~~~
+scores.keys() 
+# dict_keys(['eli', 'cam', 'flo', 'dev', 'bob', 'ali']) 
+scores.values() 
+# dict_values([90, 65, 87, 12, 34, 45]) 
+~~~ 
 
-You can look up items by key.  There are workarounds to do it by value but that's not recommended.  That's not the point of a dictionary.
+See the order is NOT the same for the keys and values that are returned
+
+You can look up items by key.  There are workarounds to do it by value but we're not getting into that now.  That's not the point of a dictionary.
 
 
 modules
