@@ -147,38 +147,62 @@ type(True)
 ~~~
 
 
-lists
+### Lists
 
-purpose
+Purpose
+
 We've looked at single elements, but we often need groups of elements to be useful – new data type called list
-initialization
-assign them to a variable, enclose comma separated values in square brackets
-lists can contain any mix of values
-len() 
-	just like strings, get count of items in list
+* Initialization: enclose comma separated values in square brackets
+* We can assign them to a variable, 
+* Lists can contain any mix of values
 
-accessing elements
-	we count elements position.  Start from 0.
-	Think of it like your age.  You're not 1 until the second year of your life.
-	Stay in range.
-	start at left with 0
-	start at right with -1
+Methods
+
+len()  - just like strings, get count of items in list
+
+Accessing elements
+
+We access elements by their position.  Start from 0. Think of it like your age.  You're not 1 until the second year of your life.  Stay in range.  Start at left with 0.  Start at right with -1
+
+~~~
+mylist = ['alligator', 'bat', 'cat', 'dog', 'elephant', 'frog']
+mylist[0]
+mylist[-2]
+mylist[9] #out of range
+~~~
 
 Other things to do with lists – look up Python list methods
-adding elements
-	mylist.append(x)
-	mylist.insert(1, 'dog')
 
-removing elements
-	mylist.remove('dog')
-	How would you remove the item in position 3?
+Adding elements
+~~~
+mylist.append(x)
+mylist.insert(1, 'zebra')
+~~~
 
-changing elements
-	
-slicing lists
-	: to define range – start point is inclusive, stop is not
-	out of range OK
-	Get the entire list [:] as a copy
+Removing elements
+~~~
+mylist.remove('dog')
+~~~
+
+How would you remove the item in position 3?  Look up in the docs.
+
+Changing elements
+~~~
+mylist[2] = 'yak'
+~~~
+
+Slicing lists
+
+: to define range – start point is inclusive, stop is not
+~~~
+mylist[1:3]
+~~~
+
+Out of range OK
+mylist[2:10]
+
+
+Get the entire list [:] as a copy
 
 	What happens when you do this:
 >>> a = ['banana', 'strawberry', 'peach'] 
