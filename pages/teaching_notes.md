@@ -429,16 +429,18 @@ See the order is NOT the same for the keys and values that are returned
 You can look up items by key.  There are workarounds to do it by value but we're not getting into that now.  That's not the point of a dictionary.
 
 
-modules
+### Modules
 
-purpose
-Python has a lot of great stuff right out of the box.  Even more through importing modules.  Standard modules can be imported at any time.  Other modules like stat analysis packages need to be installed.
+Purpose: Python has a lot of great stuff right out of the box.  Even more through importing modules.  Standard modules can be imported at any time.  Other modules like stat analysis packages need to be installed.
+
+Google 'Python standard library' -- review built in modules and other modules.
 
 
-Builtins
-Let's lookup Python standard modules on Google
+Other modules such as `math` and `random`
 
-imports
+~~~
+import math
+import random
 
 math
 math.pi
@@ -447,6 +449,11 @@ random
 random.randint()
 random.choice()
 
+dir(math)
+help(math)
+help(math.sqrt)
+
+~~~
 
 
 
