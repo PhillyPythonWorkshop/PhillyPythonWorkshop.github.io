@@ -72,40 +72,45 @@ if pizza + hoagie < 20:
 
 
 
-functions
-Running on off scripts is fine, but the whole point of learning to code is reproducibility 
+### Functions
 
+Running one-off scripts is fine, but the whole point of learning to code is reproducibility.  We want to be able to automate things so we don't have to write the same code over and over again. 
 
-	def add_two(x, y):
-                  return x +  y
+~~~
+def add_two(x, y):
+    return x +  y
+~~~
 
-	We can have conditionals inside functions
+We can have conditionals inside functions
 
-	def lunch_for_two(lunch1, lunch2):
-   		if lunch1 + lunch2 < 20:
-		     return “Lunch for two under $20”
-		else:
-		    return “You need more money”
+~~~
+def lunch_for_two(lunch1, lunch2):
+    if lunch1 + lunch2 < 20:
+        return “Lunch for two under $20”
+    else:
+        return “You need more money”
+~~~
 
+We can assign results of functions to variables 
 
-	We can assign results of functions to variables 
+~~~
+def add_two(x,y):
+    return x + y
 
-	def add_two(x,y):
-                  return x + y
+total = add_two(45, 21)
 
-	total = add_two(45, 21)
+total + 1
+~~~
 
-	total + 1
+Difference between print & return
 
-	def mult_two(x,y):
-                 print(x*y)
+~~~
+def mult_two(x,y):
+    print(x*y)
 
-
-
-
-
-**Difference between print & return
-
+def mult_two(x,y):
+    return(x*y)
+~~~
 
 
 type()
