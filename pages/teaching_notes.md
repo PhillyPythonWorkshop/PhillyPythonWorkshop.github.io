@@ -250,134 +250,118 @@ range(0,100,5)
 ~~~
 
 
-loops and more flow control
+### Loops
 
-for loops
-	accessing & changing elements at known points
-	we can also access & change items in the list one by one
-	for x in mylist:
-	    do something
+#### for loops
 
-	x is assinged at runtime – can have any name
+We looked at accessing & changing elements at known points.  We can also access & change a series of items in the list
 
-	for x in range(10):
-                   print(x+10)
+for x in mylist:
+    do something
 
 
-	Just don't use a name you've used elsewhere.  Singular of the list is common, as is 'i'
-	Python remembers the last value of x even though it is generally used as a throwaway variable
-b = [1, 2, 3, 4, 5]
->>> for x in range(len(b)): 
-...     b[x] = b[x] + 1 
-... 
->>> b 
-[2, 3, 4, 5, 6] 
 
-if statements inside for loops
+~~~
+print(range(10))
+
+for x in range(10):
+    print(x+10)
+
+~~~~
+
+* x is assinged at runtime – can have any name
+* Just don't use a name you've used elsewhere.  Singular of the list is common, as is 'i'
+* Python remembers the last value of x even though it is generally used as a throwaway variable
+
+~~~~
+b = [32, 6, 9, 17, 209]
+for x in range(len(b)): 
+    b[x] = b[x] + 1 
+print(b)
+
+c = [2, 4, 1, 8]    
+# Why won't this work?
+for x in c:
+    x = x + 1
+~~~~    
+    
+ 
+#### if statements inside for loops
 We've talked about loops – how to step through things one by one, and conditionals. Let's put it together.  
 
->>> for x in range(len(b)): 
-...     if b[x]%2 == 0: 
-...         b[x] = b[x] + 5 
-... 
->>> b 
-[1, 7, 3, 9, 5, 11, 7, 13, 9, 15] 
+~~~
+for x in range(len(b)): 
+    if b[x]%2 == 0: 
+        b[x] = b[x] + 5 
+print(b)
+~~~
+
+Loops can be nested
+
+~~~
+# What will this print? 
+letters = ["a", "b", "c"]
+numbers = [1, 2, 3]
+for letter in letters:
+    for number in numbers:
+        print letter * number
+~~~~    
+
+Order matters for nested loops!
+
+~~~
+for number in numbers:
+   for letter in letters:
+       print number * letter
+~~~
 
 
-nested for loops
+#### while loops
+* With for loops we specify a start and end point
+* While loops – do something until a certain condition is met
 
->>> letters = ["a", "b", "c"]
->>> numbers = [1, 2, 3]
->>> for letter in letters:
-...     for number in numbers:
-...         print letter * number
-…
-
-
-a
-aa
-aaa
-b
-bb
-bbb
-c
-cc
-ccc
-
---------Order matters!--------------
-
->>> for number in numbers:
-...     for letter in letters:
-...         print number * letter
-...
-a
-b
-c
-aa
-bb
-cc
-aaa
-bbb
-ccc
-
-
-
-while loops
-With for loops we specify a start and end point
-While loops – do something until a certain condition is met
-
+~~~
 x = 0
 while x < 100:
     print(x)
     x += 1   #note here's a shortcut
+~~~
 
+CAUTON: infinite loops.  What would happen if I didn't increment x?
 
-infinite loops
-	What would happen if I didn't increment x?
-
-Just this:
+~~~
 x = 0
 while x < 100:
     print(x)
+~~~
+
+#### if statements inside while loops
+
+~~~
+x = 0 
+while x < 100: 
+    if x%5 != 0: 
+        print(x) 
+    x+=1 
+
+q = [] 
+x = 0 
+while x < 100: 
+    if x % 5 != 0: 
+        q.append(x) 
+    x += 1 
+~~~
 
 
-	or I did increment x
+breaking from loops
 
-x = 0
-while x < 100:
-    print(x)
-    x -= 1   #note here's a shortcut
+x = 0 
+while x < 100: 
+    print(x) 
+        if x == 65: 
+            break 
+    x += 5 
 
-
-
-if statements inside while loops
-
->>> x = 0 
->>> while x < 100: 
-...     if x%5 != 0: 
-...         print(x) 
-...     x+=1 
-
->>> q = [] 
->>> x = 0 
->>> while x < 100: 
-...     if x % 5 != 0: 
-...         q.append(x) 
-...     x += 1 
-... 
->>> q 
-[1, 2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14, 16, 17, 18, 19, 21, 22, 23, 24, 26, 27, 28, 29, 31, 32, 33, 34, 36, 37, 38, 39, 41, 42, 43, 44, 46, 47, 48, 49, 51, 52, 53, 54, 56, 57, 58, 59, 61, 62, 63, 64, 66, 67, 68, 69, 71, 72, 73, 74, 76, 77, 78, 79, 81, 82, 83, 84, 86, 87, 88, 89, 91, 92, 93, 94, 96, 97, 98, 99] 
->>> 
-
-
-	break
-
->>> x = 0 
->>> while x < 100: 
-...     print(x) 
-...     if x == 65: 
-...         break 
-...     x += 5 
 
 input()
 
