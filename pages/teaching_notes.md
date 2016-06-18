@@ -1,4 +1,4 @@
-### math  
+### Math  
 * adding
 * subtracting
 * multiplying
@@ -6,7 +6,7 @@
 * modulus
 
 
-### strings
+### Strings
 * enclosed in quotes – single or double, just be consistent
 * think of as text but they can hold anything, just get treated as text
 
@@ -22,7 +22,7 @@ Let's look at documentation – Google is your friend.  Look up “Python string
 * x.center(15,'*')
 * x.isalnum()   *we'll get to what that true/false means in a bit
 
-### variables
+### Variables
 
 * Think of them as names/holders for values
 * = is used to assign a variable to value
@@ -30,13 +30,14 @@ Let's look at documentation – Google is your friend.  Look up “Python string
 * can be reassigned
 
 
-booleans
-True or False (result of ==, <, >, <=, >=, is, in, not)
-Combine with and/or
+### Booleans
+* True or False (result of ==, <, >, <=, >=, is, in, not)
+* Combine with and/or
 
-if/elif/else
-Called conditionals
-Get script to do something based on a condition
+### Conditionals
+
+* if/elif/else
+* Tell Python to do something based on the condition of something else
 
 		brother_age = 12
 		sister_age = 9
