@@ -113,25 +113,38 @@ def mult_two(x,y):
 ~~~
 
 
-type()
-Every object in Python has a type.  We've looked at a few types already – string, int, float, function, bool
-Python is strongly typed and dynamically typed
-Dynamically: type is set at runtime, not in the code
-Strongly typed = Python won't fudge the types to make an operation work
+### Types
 
-2+ 3 works 
+Every object in Python has a type.  We've looked at a few types already – string, int, float, function, bool
+Python is strongly typed and dynamically typed.  What does this mean?
+* Dynamically: type is set at runtime, not in the code
+* Strongly typed: Python won't fudge the types to make an operation work
+
+2 + 3 works 
+
 2 + “3” does not
 
 We can use these to test whether certain operations can be performed
 
->>> a = 3 
->>> b = '4' 
->>> 
->>> if type(a) == int and type(b) == int: 
-...     print(a+b) 
-... else: 
-...     print("Can't add different types") 
+~~~
+a = 3 
+b = '4' 
+ 
+if type(a) == int and type(b) == int: 
+    print(a+b) 
+else: 
+    print("Can't add different types") 
+~~~
 
+
+Try:
+~~~
+type(5)
+type('5')
+type('hello')
+type(5.2)
+type(True)
+~~~
 
 
 lists
