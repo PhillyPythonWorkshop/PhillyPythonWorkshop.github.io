@@ -364,20 +364,22 @@ while x < 100:
     x += 5 
 ~~~
 
-input()
+### Getting user input
 
-When you want user input 
-Always a string, can be converted into an int.
+~~~
+input() #Python 3
+raw_input() #Python 2
+~~~
 
-	x = input("choose a number from 1 to 10: ") 
-	type(x)
-	
-	
->>> float(x) 
-4.0 
->>> int(x) 
-4 
+* When you want user input 
+* Always a string, can be converted into an int.
 
+~~~
+x = input("choose a number from 1 to 10: ") 
+type(x)
+float(x) 
+int(x) 
+~~~
 
 
 dictionaries
