@@ -39,30 +39,38 @@ Let's look at documentation – Google is your friend.  Look up “Python string
 * if/elif/else
 * Tell Python to do something based on the condition of something else
 
-		brother_age = 12
-		sister_age = 9
-		if brother_age > sister_age:
-     		    print(“Brother is older”)
-                       elif brother_age == sister_age:
-                             print(“They are the same age”)
-		else:
- 		    print(“Brother is younger”)
+~~~
+brother_age = 12
+sister_age = 9
+if brother_age > sister_age:
+    print(“Brother is older”)
+elif brother_age == sister_age:
+    print(“They are the same age”)
+else:
+    print(“Brother is younger”)
+~~~
 
+Things don't have to be relevant:
 
-		Things don't have to be relevant:
-		if brother_age > sister_age:
-  		    print(“Knock knock”)
+~~~
+if brother_age > sister_age:
+    print(“Knock knock”)
+~~~
 
 We can have multiple conditions & operations in conditions
 
-		pizza = 10
-		hoagie = 7
+~~~
+pizza = 10
+hoagie = 7
 
-		if pizza > 5 and hoagie > 5:
- 			print(“Both cost more than $5”)
+if pizza > 5 and hoagie > 5:
+    print(“Both cost more than $5”)
 
-		if pizza + hoagie < 20:
- 			print(“Lunch for two for under 20 bucks!”)
+if pizza + hoagie < 20:
+    print(“Lunch for two for under 20 bucks!”)
+~~~
+
+
 
 functions
 Running on off scripts is fine, but the whole point of learning to code is reproducibility 
