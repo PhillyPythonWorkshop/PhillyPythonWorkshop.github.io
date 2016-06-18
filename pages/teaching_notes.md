@@ -230,23 +230,24 @@ fruits.sort()
 ~~~
 
 		
-tuples
-	defined with parentheses
-	like lists but immutable
-	can access specific elements but can't change them
-
-*** strings are like tuples - can slice, access elements, can not change elements
-
+### Tuples
+* defined with parentheses
+* like lists but immutable
+* can access specific elements but can't change them
+* strings are like tuples - can slice, access elements, can not change elements
 
 
-
+### Range
 range()  
 
-start - inclusive, stop exclusive, step optional
-A little different in Python 3 – keeps it as a range type
-Python 2 would translate this into a list
-It many ways it behaves like a list – you can accesss but you can't change elements. Maybe more like a tuple?
+* start (inclusive, 0 if omitted), stop (exclusive), step optional
+* A little different in Python 3 – keeps it as a range type
+* Python 2 would translate this into a list
 
+~~~
+range(10)
+range(0,100,5)
+~~~
 
 
 loops and more flow control
