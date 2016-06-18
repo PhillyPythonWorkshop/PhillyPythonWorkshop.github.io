@@ -199,27 +199,35 @@ mylist[1:3]
 ~~~
 
 Out of range OK
+~~~
 mylist[2:10]
+~~~
 
 
 Get the entire list [:] as a copy
 
-	What happens when you do this:
->>> a = ['banana', 'strawberry', 'peach'] 
->>> b = a 
->>> c = a[:] 
+What happens when you do this:
+~~~
+a = ['banana', 'strawberry', 'peach'] 
+b = a 
+c = a[:] 
 
-
+a.append['mango']
+print(a)
+print(b)
+print(c)
+~~~
 
 Get max & min values
->>> max(fruits) 
-'strawberry' 
->>> min(fruits) 
-'apple' 
+~~~
+max(fruits) 
+min(fruits) 
+~~~
 
 Sorting lists, in place
+~~~
 fruits.sort()
-
+~~~
 
 		
 tuples
