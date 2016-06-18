@@ -502,6 +502,8 @@ Write a function that takes one argument. If the argument is a list, it returns 
 
 hilo game
 
+~~~
+
 num_to_guess = random.randint(1, 100)
 
 while True:
@@ -513,7 +515,7 @@ while True:
         print("Too high. Try again")
     elif num_guess <= num_to_guess:
         print("Too low. Try again.") 
-
+~~~
 
 Move on to scrabble
 
