@@ -355,13 +355,14 @@ while x < 100:
 
 breaking from loops
 
+~~~
 x = 0 
 while x < 100: 
     print(x) 
         if x == 65: 
             break 
     x += 5 
-
+~~~
 
 input()
 
