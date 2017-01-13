@@ -23,11 +23,7 @@ If you already think you have Python 3 installed, please check with a staff memb
 
 3. At the command prompt (which will look something like `C:\Users\username>`, type: 
 ```
-<<<<<<< HEAD
 python
-=======
-python34\python.exe
->>>>>>> upstream/master
 ```
 You should see something that looks like this:
 
@@ -44,68 +40,6 @@ You just started Python! The `>>>` indicates that you are at a new type of promp
 
 4. To exit the Python shell, type `exit()` and hit enter.  You'll now be back at the Windows command prompt (the `C:\` that you saw earlier).
 
-<<<<<<< HEAD
-=======
-# Put Python on the Windows PATH
-
-You might have noticed that you typed a "full path" to the Python application above when launching Python (python.exe is the application, but we typed \Python34\python.exe). In this step, you will configure your computer so that you can run Python without typing the Python34 directory name.
-
-#### Get to System Properties
-
-##### Windows 8
-
-> Search for your "Control Panel" and open it.
-> Select the "system" icon. A window labeled "View basic information about your computer" will appear.
-> In this window, click "Advanced system settings" and follow the steps below for all versions of Windows.
-
-##### Windows 7 or Vista
-
-> Open up "Computer"  by clicking on the Start menu or the Windows logo in the lower-left hand corner, and navigate to "Computer."
-> ''Right-click'' on the empty space in the window, and choose ''Properties''. A window labeled "View basic information about your computer" will appear.
-> In this window, click "Advanced system settings" and follow the steps below for all versions of Windows.
-
-##### Windows XP
- 
-> Open up "My Computer"  by clicking on the Start menu or the Windows logo in the lower-left hand corner, and navigate to "My Computer."
-> Right-click on the empty space in the window, and choose ''Properties''.  A window labeled "System Properties" will pop up.
-> Click the "Advanced" tab and follow the steps below for all versions of Windows.
-
-The next steps are the same for any version of Windows.
-
-A window with the title "System Properties" will appear.
-
-#### Edit the Path
-
-1. Within System Properties, make sure you are in the tab labeled "Advanced".
-
-2. Click the button labeled "Environment Variables". A window labeled "Environment Variables" will appear.
-
-3. In this window, the screen is split between "User variables" and "System variables". Within "System variables", scroll down and find the one labeled Path. Click the "Edit..." button.
-
-4. A window with the "Variable name" and the "Variable value" should appear. The "Variable value" will already have some text in it; click in the box to unhighlight it (we don't want to accidentally delete that text).
-
-5. In the "Variable value" box, scroll to the end. Add the following text, and hit OK. Make sure to include the semicolon at the start!
-
-`;c:\python34\;c:\python34\scripts`
-
-6. Hit "OK" to close out the system properties window.
-
-
-#### Test your change:
-Open up a new command prompt. 
-
-You do this the same way you did above when installing python. This needs to be a new command prompt because the changes you just made didn't take affect in prompts that were already open.
-
-Type `python3` into the command prompt to start Python
-
-Notice that you now get a Python interpreter, indicated by the change to a `>>>` prompt.
-
-Exit the Python prompt by typing `exit()` and hitting enter. 
-
-Now you're back at the Windows command prompt `(C:\)`.
-
-
->>>>>>> upstream/master
 # Prepare a text editor
 
 While you can absolutely write python code in any text editor, it is a lot easier to use one that is aware of code content and provides relevant features. To that end, we'll be using Sublime Text 3. While there are a multitude of other options, Sublime 3 provides a good blend of simplicity and functionality.
@@ -159,10 +93,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 
 # Practice navigating the computer from a command prompt
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/master
 
 The filesystem on your computer is like a tree made up of folders (also called "directories") and files. The filesystem has a root directory called `/`, and everything on your computer lives in subdirectories of this root directory.
 We often navigate the filesystem graphically by clicking on graphical folders. We can do the exact same navigation from the command line.
@@ -201,20 +131,12 @@ Type each of these commands and hit enter:
 `dir`
 *This lists the contents of the current directory (root).*
 
-<<<<<<< HEAD
-
-=======
->>>>>>> upstream/master
 #### Tips
 
 You can use Tab to auto-complete directory and file names. So from inside the root directory, if you type `cd Use` and hit Tab, the command prompt will auto-complete the directory name, and you can then hit enter to change into the `C:\Users` directory.
 The command prompt maintains a command history. You can use the up arrow to cycle through old commands.
 Note that the text that makes up the command prompt changes as you move around directories. The command prompt will always give the full directory path to your current directory.
 
-<<<<<<< HEAD
-
-=======
->>>>>>> upstream/master
 #### Check your understanding
 
 Answer these questions. Experiment at the command line if you need to! If you aren't sure about an answer, ask a helper.
@@ -230,35 +152,17 @@ Answer these questions. Experiment at the command line if you need to! If you ar
 #### Success!
 You've practiced using dir and cd to navigate your computer's filesystem from the command prompt.
 
-<<<<<<< HEAD
-
 # Start learning Python!
 Go through this [self-directed tutorial](/fridaytutorial/) to start learning to read and write in Python. These concepts will be reviewed in the Saturday lesson, along with some more advanced topics.
 
-
-=======
-# Start learning Python!
-Go through this [self-directed tutorial](/fridaytutorial/) to start learning to read and write in Python. These concepts will be reviewed in the Saturday lesson, along with some more advanced topics.
-
->>>>>>> upstream/master
 # Get dependencies installed for the projects
 
 Download the [Wordplay Project](https://github.com/PhillyPythonWorkshop/Wordplay/archive/master.zip).
 
 Download the [Colorwall Project](https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip) for Python 3.  
 
-<<<<<<< HEAD
-
-# Practice
-Try some [practice exercises](/practice/).  If you've been working on any other tutorials, feel free to go to those too, and ask an instructor to help anywhere you get stuck.
-
-
-# Checkoff
-Have an instructor or assistant [check you off](/fridaycheckoff/).
-=======
 # Practice
 Try some [practice exercises](/practice/).  If you've been working on any other tutorials, feel free to go to those too, and ask an instructor to help anywhere you get stuck.
 
 # Checkoff
 Have an instructor or assistant [check you off](/fridaycheckoff/).
->>>>>>> upstream/master
