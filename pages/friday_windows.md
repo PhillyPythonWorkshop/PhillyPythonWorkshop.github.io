@@ -9,9 +9,9 @@ Here's what you need to do to set up your Windows machine.
 # Download and Install Python
 If you already think you have Python 3 installed, please check with a staff member before completing these instructions.
 
-1.  Click on [this download link](https://www.python.org/ftp/python/3.5.1/python-3.5.1.exe) and choose "run" if you have the option to do so. Otherwise, save it to your computer and double click to start the installer.
+1.  Click on [this download link](https://www.python.org/ftp/python/3.6.0/python-3.6.0-amd64.exe) and choose "run" if you have the option to do so. Otherwise, save it to your computer and double click to start the installer.
   * Windows may prompt you on whether you want to run or install Python. Click RUN or YES when these prompts may appear.
-  * Check the box to "Add Python 3.5 to PATH".
+  * Check the box to "Add Python 3.6 to PATH".
   * Click "Install Now"; this will also install IDLE, pip, and documentation tools which will make your Python learning experience much easier. Follow the instructions to complete the installation, and click CLOSE when complete.
 
 2.  Open a command prompt (we will be doing this multiple times, so make a note of how to do this!):
@@ -28,7 +28,7 @@ python
 You should see something that looks like this:
 
 ~~~
-Python 3.5.1 (v3.5.1:37a07cee5969, Dec  6 2015, 01:38:48) [MSC v.1900 32 bit (Intel)] on win32
+Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 08:06:12) [MSC v.1900 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ~~~
@@ -67,7 +67,7 @@ This ensures that when you hit the Tab button on your keyboard, your text editor
 * To start Python, type `python` at the command prompt and hit enter. You should see something like this:
 
 ~~~
-Python 3.5.1 (v3.5.1:37a07cee5969, Dec  6 2015, 01:38:48) [MSC v.1900 32 bit (Intel)] on win32
+Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 08:06:12) [MSC v.1900 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ~~~
