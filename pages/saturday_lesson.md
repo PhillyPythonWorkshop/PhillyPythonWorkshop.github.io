@@ -4,9 +4,10 @@ title: Saturday Lesson
 permalink: /saturdaylesson/
 ---
 
-##Lecture outline
+## Lecture outline
 
-###review Friday material
+### review Friday material
+
 * math
 * type()
 * variables
@@ -15,7 +16,8 @@ permalink: /saturdaylesson/
 * if/elif/else
 * functions
 
-###lists
+### lists
+
 * purpose
 * initialization
 * len() review
@@ -24,13 +26,14 @@ permalink: /saturdaylesson/
 * changing elements
 * slicing lists
 
-###tuples
+### tuples
 
 * like lists but immutable
 * can perform all the same operations except changing elements
 * strings are like tuples - can slice, access elements, can not change elements
 
-###loops and more flow control
+### loops and more flow control
+
 * for loops
 * if statements inside for loops
 * nested for loops
@@ -41,7 +44,8 @@ permalink: /saturdaylesson/
 * break
 * input()
 
-###dictionaries
+### dictionaries
+
 * purpose
 * initialization
 * accessing elements
@@ -49,7 +53,8 @@ permalink: /saturdaylesson/
 * changing elements
 * keys() and values()
 
-###modules
+### modules
+
 * purpose
 * builtins
 * imports
@@ -73,23 +78,15 @@ Walk through [state_capitals.py](https://raw.githubusercontent.com/PhillyPythonW
 * allow user to end game
 
 
-###Practice exercises
+### Practice exercises
 
-####Exercise 1 (as a class)
+#### Exercise 1 (as a class)
 
 Write a function that simulates the roll of two standard six sided die. 
-Save it to a file called dice_roll.  Open a Python interpreter and import dice_roll.  Run the function inside your Python interpreter.
+Save it to a file called `dice_roll.py`.  Open a Python interpreter from that same directory and `import dice_roll`.  Run the function inside your Python interpreter.
 
-~~~
-import random
 
-def roll_two():
-    #get one random number between 1 and 6
-    #get another random number between 1 and 6
-    #add them together
-    #return the result
-~~~
 
-####Exercise 2 (individual work)
+#### Exercise 2 (individual work)
 
 Write a function that takes one argument.  If the argument is a list, it returns a random item from that list - simulating drawing a person's name from a hat.  If the argument is not a list, it returns the message "The argument must be a list." Save the file and run it inside your Python interpreter.
