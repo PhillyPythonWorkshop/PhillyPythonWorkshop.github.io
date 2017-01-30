@@ -9,26 +9,28 @@ Here's what you need to do to set up your Windows machine.
 # Download and Install Python
 If you already think you have Python 3 installed, please check with a staff member before completing these instructions.
 
-1.  Click on [this download link](https://www.python.org/ftp/python/3.4.3/python-3.4.3.msi) and choose "run" if you have the option to do so. Otherwise, save it to your computer and double click to start the installer.  Follow the instructions to complete the installation.
+1.  Click on [this download link](https://www.python.org/ftp/python/3.6.0/python-3.6.0-amd64.exe) and choose "run" if you have the option to do so. Otherwise, save it to your computer and double click to start the installer.
+  * Windows may prompt you on whether you want to run or install Python. Click RUN or YES when these prompts may appear.
+  * Check the box to "Add Python 3.6 to PATH".
+  * Click "Install Now"; this will also install IDLE, pip, and documentation tools which will make your Python learning experience much easier. Follow the instructions to complete the installation, and click CLOSE when complete.
 
 2.  Open a command prompt (we will be doing this multiple times, so make a note of how to do this!):
-  * On Windows 8 search for "command prompt"
+  * On Windows 8 or Windows 10, search for "command prompt"
   * On Windows 7 or Vista click on the Start menu (the Windows logo in the lower left of the screen), type cmd into the Search field directly above the Start menu button, and click on "cmd" in the search results above the Search field.
   * On Windows XP click on the Start menu (the Windows logo in the lower left of the screen), click on "Run...", type cmd into the text box, and hit enter.
 
   You now have what's called a command prompt.  This command prompt is another way of navigating your computer and running programs -- just textually instead of graphically. We are going to be running Python and Python scripts from this command prompt.
 
-3. At the command prompt (it should look like  `C:\`) type 
+3. At the command prompt (which will look something like `C:\Users\username>`, type: 
 ```
-python34\python.exe
+python
 ```
 You should see something that looks like this:
 
 ~~~
-Python 3.4.0 (default, Apr 11 2014, 13:05:11)
-[GCC 4.8.2] on linux
+Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 08:06:12) [MSC v.1900 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
->>> 
+>>>
 ~~~
 
 You just started Python! The `>>>` indicates that you are at a new type of prompt -- a Python prompt. The command prompt lets you navigate your computer and run programs, and the Python prompt lets you write and run Python code interactively.
@@ -37,65 +39,6 @@ You just started Python! The `>>>` indicates that you are at a new type of promp
 
 
 4. To exit the Python shell, type `exit()` and hit enter.  You'll now be back at the Windows command prompt (the `C:\` that you saw earlier).
-
-# Put Python on the Windows PATH
-
-You might have noticed that you typed a "full path" to the Python application above when launching Python (python.exe is the application, but we typed \Python34\python.exe). In this step, you will configure your computer so that you can run Python without typing the Python34 directory name.
-
-#### Get to System Properties
-
-##### Windows 8
-
-> Search for your "Control Panel" and open it.
-> Select the "system" icon. A window labeled "View basic information about your computer" will appear.
-> In this window, click "Advanced system settings" and follow the steps below for all versions of Windows.
-
-##### Windows 7 or Vista
-
-> Open up "Computer"  by clicking on the Start menu or the Windows logo in the lower-left hand corner, and navigate to "Computer."
-> ''Right-click'' on the empty space in the window, and choose ''Properties''. A window labeled "View basic information about your computer" will appear.
-> In this window, click "Advanced system settings" and follow the steps below for all versions of Windows.
-
-##### Windows XP
- 
-> Open up "My Computer"  by clicking on the Start menu or the Windows logo in the lower-left hand corner, and navigate to "My Computer."
-> Right-click on the empty space in the window, and choose ''Properties''.  A window labeled "System Properties" will pop up.
-> Click the "Advanced" tab and follow the steps below for all versions of Windows.
-
-The next steps are the same for any version of Windows.
-
-A window with the title "System Properties" will appear.
-
-#### Edit the Path
-
-1. Within System Properties, make sure you are in the tab labeled "Advanced".
-
-2. Click the button labeled "Environment Variables". A window labeled "Environment Variables" will appear.
-
-3. In this window, the screen is split between "User variables" and "System variables". Within "System variables", scroll down and find the one labeled Path. Click the "Edit..." button.
-
-4. A window with the "Variable name" and the "Variable value" should appear. The "Variable value" will already have some text in it; click in the box to unhighlight it (we don't want to accidentally delete that text).
-
-5. In the "Variable value" box, scroll to the end. Add the following text, and hit OK. Make sure to include the semicolon at the start!
-
-`;c:\python34\;c:\python34\scripts`
-
-6. Hit "OK" to close out the system properties window.
-
-
-#### Test your change:
-Open up a new command prompt. 
-
-You do this the same way you did above when installing python. This needs to be a new command prompt because the changes you just made didn't take affect in prompts that were already open.
-
-Type `python3` into the command prompt to start Python
-
-Notice that you now get a Python interpreter, indicated by the change to a `>>>` prompt.
-
-Exit the Python prompt by typing `exit()` and hitting enter. 
-
-Now you're back at the Windows command prompt `(C:\)`.
-
 
 # Prepare a text editor
 
@@ -128,7 +71,6 @@ Be sure that you've set tabs equal to 4 spaces and the tabs to spaces setting is
 
     // Set to true to insert spaces when tab is pressed
     "translate_tabs_to_spaces": true,
-
 ~~~
 
 This ensures that when you hit the Tab button on your keyboard, your text editor will do the equivalent of typing four spaces.
@@ -137,22 +79,20 @@ This ensures that when you hit the Tab button on your keyboard, your text editor
 # Practice starting & exiting the Python shell
 
 * Open a command prompt.
-* To start Python, type `python3` at the command prompt and hit enter. You should see something like
+* To start Python, type `python` at the command prompt and hit enter. You should see something like this:
 
 ~~~
-Python 3.4.0 (default, Apr 11 2014, 13:05:11)
-[GCC 4.8.2] on linux
+Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 08:06:12) [MSC v.1900 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
->>> 
+>>>
 ~~~
 
 * The `>>>` indicates that you are at a Python prompt.
-* Exit the Python prompt by typing `exit()` and hitting enter. Now you're back at the Windows command prompt `(C:\)`.
+* Exit the Python prompt by typing `exit()` and hitting enter. Now you're back at the Windows command prompt `C:\Users\username>`.
 * Practice doing this a few times until you are comfortable entering and exiting the Python shell.
 
 
 # Practice navigating the computer from a command prompt
-
 
 The filesystem on your computer is like a tree made up of folders (also called "directories") and files. The filesystem has a root directory called `/`, and everything on your computer lives in subdirectories of this root directory.
 We often navigate the filesystem graphically by clicking on graphical folders. We can do the exact same navigation from the command line.
@@ -207,6 +147,7 @@ Answer these questions. Experiment at the command line if you need to! If you ar
 * If you are in directory `C:\Users`, and you want to get to `C:\Users\PythonWork\projects`, how would you do that?
 * What are 2 ways to avoid typing out a full navigation command? (hint: one requires that you've run the command before)
 * What is the difference between a command prompt and a Python prompt?
+
 
 #### Success!
 You've practiced using dir and cd to navigate your computer's filesystem from the command prompt.
