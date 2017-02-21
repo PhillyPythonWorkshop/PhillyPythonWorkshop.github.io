@@ -12,7 +12,7 @@ Along the way, we'll also set up a more advanced text editor that will help us b
 
 To install Python 3 for Mac:
 
-* Download the package available here: [Python 3.6.0 Installation Package for Mac)(https://www.python.org/ftp/python/3.6.0/python-3.6.0-macosx10.6.pkg)
+* Download the package available here: [Python 3.6.0 Installation Package for Mac](https://www.python.org/ftp/python/3.6.0/python-3.6.0-macosx10.6.pkg)
 * Double click the downloaded file to start the installation process.
 * Click through the wizard. The default settings are all fine to use. Close the wizard when complete.
 
