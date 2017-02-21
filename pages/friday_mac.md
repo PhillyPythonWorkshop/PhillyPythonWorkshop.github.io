@@ -4,7 +4,7 @@ title: Friday Setup - Mac
 permalink: /frisetupmac/
 ---
 
-While Macs come with Python 2.7.x pre-installed, we'll be working with Python 3 during this session so there's some light installation ahead of us. This will require administrative priveleges to your computer since the python installation is usually done to protected directories.
+While Macs come with Python 2.7.x pre-installed, we'll be working with Python 3 during this session so there's some light installation ahead of us. This will require administrative priveleges to your computer since the Python installation is usually done to protected directories.
 
 Along the way, we'll also set up a more advanced text editor that will help us by providing some really specific programming features.
 
@@ -39,7 +39,7 @@ While inside the python interpreter:
 
 # Installing a Text Editor (Sublime)
 
-While you can absolutely write python code in any text editor, it is a lot easier to use one that is aware of code content and provides relevant features. To that end, we'll be using Sublime Text 3. While there are a multitude of other options, Sublime 3 provides a good blend of simplicity and functionality.
+While you can absolutely write Python code in any text editor, it is a lot easier to use one that is aware of code content and provides relevant features. To that end, we'll be using Sublime Text 3. While there are a multitude of other options, Sublime 3 provides a good blend of simplicity and functionality.
 
 [Download it from here](http://www.sublimetext.com/3)
 
@@ -156,6 +156,7 @@ Answer these questions. Experiment at the command line if you need to! If you ar
 You've practiced using `ls` and `cd` to navigate your computer's filesystem using Terminal.
 
 # Start learning Python!
+
 Go through this [self-directed tutorial](/fridaytutorial/) to start learning to read and write in Python. These concepts will be reviewed in the Saturday lesson, along with some more advanced topics.
 
 # Get dependencies installed for the projects
