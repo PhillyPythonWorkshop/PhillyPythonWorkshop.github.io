@@ -8,51 +8,13 @@ While Macs come with Python 2.7.x pre-installed, we'll be working with Python 3 
 
 Along the way, we'll also set up a more advanced text editor that will help us by providing some really specific programming features.
 
-# Installing the Command-Line Tools
+# Installing Python 3.6 for Mac
 
-If you don't have the command line tools provided by Apple already set up, you'll need to do that.
+To install Python 3 for Mac:
 
-You can check whether you have them already by:
-
-  1. opening `Terminal` (you can find it in your `Utilities` directory inside of `Applications`)
-  2. typing in the following and then pressing `enter`:
-
-{% highlight bash %}
-xcode-select --install
-{% endhighlight %}
-
-If you get a message that looks like the following, you're already ready to go, otherwise it will begin the installation.
-
-~~~~
-xcode-select: error: command line tools are already installed, use "Software Update" to install updates
-~~~~
-
-__Backup method if the first doesn't work:__
-
-  1. Go [here](https://developer.apple.com/downloads/index.action) after logging in with any AppleID
-  2. Select and download the "Command Line Tools" for your respective version of OS X
-
-
-# Installing Homebrew
-
-[Homebrew](http://brew.sh) is a [package manager](https://en.wikipedia.org/wiki/Package_manager) for Mac. It will help us quickly install Python 3.
-
-  1. Open up the `Terminal` application (if you haven't already)
-  2. Copy and paste the following into the command window and press `enter`
-
-{% highlight bash %}
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-{% endhighlight %}
-
-During this process, you will prompted for your password (again, you'll need to have administrative priveleges). Don't worry if characters don't show up as you type; that's just how it keeps your password hidden from others' prying eyes :) !
-
-# Installing python3
-
-With Homebrew now installed, you can install `python3` with the following command in the `Terminal`.
-
-{% highlight bash %}
-brew install python3
-{% endhighlight %}
+* Download the package available here: [Python 3.6.0 Installation Package for Mac)(https://www.python.org/ftp/python/3.6.0/python-3.6.0-macosx10.6.pkg)
+* Double click the downloaded file to start the installation process.
+* Click through the wizard. The default settings are all fine to use. Close the wizard when complete.
 
 # Testing the installation
 
@@ -60,25 +22,20 @@ You can test that your installation went well by running the `python3` interpret
 
 Enter the following into the terminal and press `enter`:
 
-{% highlight bash %}
-python3
-{% endhighlight %}
+    python3
 
-You should then see something like,
+You should then see something like this:
 
-~~~~
-Python 3.5.0 (default, Sep 14 2015, 02:37:27) 
-[GCC 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.53)] on darwin
-Type "help", "copyright", "credits" or "license" for more information.
->>> 
-~~~~
+    Python 3.6.0 (v3.6.0:41df79263a11, Dec 22 2016, 17:23:13) 
+    [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> quit()
 
 While inside the python interpreter:
 
 * The `>>>` indicates that you are at a Python prompt.
-* You can exit the Python prompt by typing `exit()` and pressing enter or by using `CTRL+d`. 
+* You can exit the Python prompt by typing `quit()` and pressing enter or by using `CTRL+d`. 
 * Practice doing this a few times until you are comfortable entering and exiting the Python shell.
-
 
 # Installing a Text Editor (Sublime)
 
@@ -92,18 +49,14 @@ Be sure that you've set tabs equal to 4 spaces and the tabs to spaces setting is
 
 ~~~
 {
-
     // The number of spaces a tab is considered equal to
     "tab_size": 4,
 
     // Set to true to insert spaces when tab is pressed
     "translate_tabs_to_spaces": true,
 
-
     ... rest of file
-
 }
-
 ~~~
 
 # Practice navigating the computer from a Terminal
