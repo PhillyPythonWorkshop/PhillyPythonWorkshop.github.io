@@ -15,7 +15,7 @@ To install Python 3 for Mac:
 * Download the package available here: [Python 3.6.0 Installation Package for Mac](https://www.python.org/ftp/python/3.6.0/python-3.6.0-macosx10.6.pkg)
 * Double click the downloaded file to start the installation process.
 * Click through the wizard. The default settings are all fine to use. Close the wizard when complete.
-
+  * Note: by default, the package installs into a central location which will require you to enter your system username and password during the process.
 # Testing the installation
 
 You can test that your installation went well by running the `python3` interpreter in the `Terminal`. 
