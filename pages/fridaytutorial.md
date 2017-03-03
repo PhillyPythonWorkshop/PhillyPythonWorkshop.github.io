@@ -172,7 +172,7 @@ will give you a *traceback*:
 ~~~
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-TypeError: cannot concatenate 'str' and 'int' objects
+TypeError: Can't convert 'int' object to str implicitly
 ~~~
 
 A traceback provides details on what was happening when Python encounters an Exception or Error -- something it doesn't know how to handle.
