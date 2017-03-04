@@ -16,6 +16,7 @@ To install Python 3 for Mac:
 * Double click the downloaded file to start the installation process.
 * Click through the wizard. The default settings are all fine to use. Close the wizard when complete.
   * Note: by default, the package installs into a central location which will require you to enter your system username and password during the process.
+
 # Testing the installation
 
 You can test that your installation went well by running the `python3` interpreter in the `Terminal`. 
@@ -165,7 +166,7 @@ Download the [Wordplay Project](https://github.com/PhillyPythonWorkshop/Wordplay
 
 Download the [Colorwall Project](https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip) for Python 3.  
 
-#Practice
+# Practice
 Try some [practice exercises](/practice/).  If you've been working on any other tutorials, feel free to go to those too, and ask an instructor to help anywhere you get stuck.
 
 # Checkoff
