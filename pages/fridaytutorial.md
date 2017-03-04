@@ -572,9 +572,9 @@ def add(x, y):
 
 ~~~
 result1 = add(1234, 5678)
-print(result)
+print(result1)
 result2 = add(-1.5, .5)
-print(result)
+print(result2)
 print("The total sum is", result1 + result2)
 ~~~
 
