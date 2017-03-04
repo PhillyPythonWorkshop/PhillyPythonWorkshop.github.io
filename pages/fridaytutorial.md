@@ -12,17 +12,17 @@ As you go through this tutorial, any time you see something like this:
 
 it's something that you can type in at the `>>>` prompt in your Python shell.  Hit Return or Enter after every line and note the output (although sometimes there won't be any!).  Don't copy and paste -- you'll learn much better if you take the time to type everything yourself.
 
-###Math
+### Math
 
 Math in Python looks a lot like math with a calculator.
 
-####Addition
+#### Addition
 
 `2 + 2`
 
 `1.65 + 2.15`
 
-####Subtraction
+#### Subtraction
 
 `12 - 5`
 
@@ -30,21 +30,21 @@ Math in Python looks a lot like math with a calculator.
 
 `45.9 - 61.7`
 
-####Multiplication
+#### Multiplication
 Multiplication uses the `*` (asterisk or star) symbol.
 
 `6 * 7`
 
 `5.6 * 4.3`
 
-####Division
+#### Division
 Division uses the `/` symbol.
 
 `12/3`
 
 `16/5`
 
-> Note: If you've used Python 2, you'll see that division works differently in Python 3.  Python 2 uses floor division for integers, meaning it will return only the whole number part of the answer.  Python 3 performs true division, returning the real or true value of the division.  
+> Note: If you've used Python 2, you'll see that division works differently in Python 3.  Python 2 uses floor division for integers, meaning it will return only the whole number part of the answer.  Python 3 performs true division, returning the real or true value of the division.
 
 To get just the whole number in Python 3, use this syntax:
 
@@ -53,7 +53,7 @@ To get just the whole number in Python 3, use this syntax:
 `50//4`
 
 
-####Modulus
+#### Modulus
 Thinking back to long division you may have learned in school, the modulus is the "remainder" after perfoming division.  It uses the `%` symbol.
 
 `16%5`
@@ -61,7 +61,7 @@ Thinking back to long division you may have learned in school, the modulus is th
 `50%4`
 
 
-####Order of Operations
+#### Order of Operations
 
 Order of operations works just like you may have learned in math class - Multiplication, Division, Addition, Subtraction. You can also use parentheses.
 
@@ -69,7 +69,7 @@ Order of operations works just like you may have learned in math class - Multipl
 
 `(5 + 4) * 3`
 
-###Types
+### Types
 
 There's a helpful function (more on what a function is later) called `type` that tells you what kind of thing -- what data type -- Python thinks something is. We can check for ourselves that Python considers '1' and '1.0' to be different data types:
 
@@ -89,7 +89,7 @@ So in this case 'type' is the name of the function, and it takes one argument; i
 
 *Stop for a moment here and try pressing the up arrow on your keyboard a few times.  The Python interpreter saves a history of what you've entered, so you can arrow up to old commands and hit Return to re-run them -- just like your computer's command prompt!  *{: style="color: blue"}
 
-###Variables
+### Variables
 
 A lot of work gets done in Python using variables. Variables are like names that are assigned to a value -- any kind of value, not just a number.
 
@@ -134,7 +134,7 @@ Variables can be made of letters, numbers, and underscores. They must start with
 Projects develop naming conventions: multi-word variable names may use underscores (like `magic_number`), or "camel case" (like `amountOfFlour`). The most important thing is to be consistent within a project, because it makes the code more readable.
 
 
-###Strings
+### Strings
 
 So far we've seen two data types: *integers* and *floats*. Another useful data type is a *string*, which is just what Python calls a bunch of characters (like numbers, letters, whitespace, and punctuation) put together. Strings are indicated by being surrounded by quotes:
 
@@ -155,7 +155,7 @@ You can assign a string value to a variable:
 `my_car = "Toyota"`
 
 
-####String Concatenation
+#### String Concatenation
 
 You can concatenate, or join strings together using the `+` sign:
 
@@ -188,7 +188,7 @@ We can, however, use the `str()` function to convert a number to a string.  Like
 
 `str("Ice cream")`
 
-####String Length
+#### String Length
 
 There's another useful function that works on strings called `len()`.  This returns the length of a string as an integer.
 
@@ -200,7 +200,7 @@ There's another useful function that works on strings called `len()`.  This retu
 
 `len(president)`
 
-####Quotes
+#### Quotes
 
 We've been using double quotes around your strings, but either double or single quotes are valid in Python:
 
@@ -222,7 +222,7 @@ or we can *escape* the quote with a backslash.  The backslash is a special chara
 
 `'Let\'s learn Python together!'`
 
-####Exercises
+#### Exercises
 
 Let's take a look at a couple of exercises.  Read the following lines of code, but don't execute them.  Try to figure out what they will do.  Sketch them out with pen and paper if you need to. Then type them in your terminal and execute them to see what happens.
 
@@ -253,7 +253,7 @@ Let's take a break.  We've covered a lot!
 
 
 
-####Comments and new lines
+#### Comments and new lines
 
 Copy and paste the following code into a new file and save it as `mayors.py`.
 
@@ -275,14 +275,14 @@ print("")
 # Here's a new kind of printing: you can use triple quotes to create
 # multiline strings.
 print("""Jim Kenney was elected Mayor
-of Philadelphia on November 3, 2015, beating 
+of Philadelphia on November 3, 2015, beating
 Republican challenger Melissa Murray Bailey.""")
 
 print("")
 
 # When you use triple quotes, whitespace is preserved.
 print("""Jim Kenney received
-    84% of the 
+    84% of the
         popular vote""")
 ~~~
 
@@ -300,7 +300,7 @@ to run this script.  Study what happens.  Edit this so it displays the last four
 : How do you print a multi-line string so that whitespace is preserved?
 
 
-####Booleans
+#### Booleans
 So far, the code we've written has been *unconditional*: no choice is getting made, and the code is always run. Python has another data type called a **boolean** that is helpful for writing code that makes decisions. There are two booleans: `True` and `False`.
 
 Try typing these in your Python console.
@@ -353,7 +353,7 @@ Or check for a lack of containment with `not in`:
 
 `"Chicago" not in "Philadelphia Python Workshop"`
 
-####Flow Control
+#### Flow Control
 
 Now that we know how to check if something is `True` or `False` we can use this to make Python execute command conditionally.
 
@@ -368,8 +368,7 @@ Type 4 spaces, and then type `print("Six is greater than five!")`. Hit `enter` t
 
 ~~~
 >>> if 6 > 5:
-...      print("Six is greater than five!")
-... 
+...      print "Six is greater than five!"
 Six is greater than five!
 ~~~
 
@@ -471,7 +470,7 @@ elif color == "pink":
 If color had been "purple", that code wouldn't have printed anything.
 *Remember that `=` is for assignment and `==` is for comparison.*
 
-####Functions
+#### Functions
 
 One of the main reasons you want to write code is so your tasks can be run quickly and be automated.  Functions allow you to write reusable blocks of code. Why are functions important?
 
