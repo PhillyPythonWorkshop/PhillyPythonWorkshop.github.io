@@ -134,8 +134,6 @@ cd ~
 
 Just like how `..` means "parent directory", `~` means "home" directory. When you execute this command, you'll change back to your home directory, where all your user files are.
 
-> On Mac and Linux (not sure about Windows), `cd` with no additional argument takes you back to your home directory.  This occasionally confused people who did it by accident.
-
 #### Tips
 
 1. You can use `tab` to auto-complete directories, files, and programs. So from inside the root directory `/`, if you type `cd Us` and press the `tab` key, the command prompt will auto-complete the directory name, and you can then hit `enter` to change into the `/Users` directory.
