@@ -60,11 +60,6 @@ Be sure that you've set tabs equal to 4 spaces and the tabs to spaces setting is
 }
 ~~~
 
-> At least one student tried literally entering `... rest of file` in the file above.  Perhaps comment it out?
-
-> Probably had the most questions about this.  Students were confused as to the difference between Default settings and User settings and why they weren't able to edit the Default file.  Perhaps worth having an explanation and/or screenshots?  This is what I generally said: "SublimeText has default settings for the application and also settings for the specific user.  Anything that is entered in User settings will override the Default settings.  By default, SublimeText has translate_tabs_to_spaces set to false, but we want to have it true, so we can override by putting it in User settings."
-
-
 # Practice navigating the computer from a Terminal
 
 The way your computer organizes storage is called a filesystem. This filesystem is organized like a tree with folders (also called `directories`) and `files`. The highest point in the tree is the _root_ directory located at `/`. Everything you can access on your computer lives within the sub-directories of this root directory.
