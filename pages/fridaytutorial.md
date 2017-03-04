@@ -492,6 +492,13 @@ We can write our own functions to encapsulate bits of useful work so we can reus
 
 A function signature tells you how the function will be called. It starts with the keyword `def`, which tells Python that you are defining a function. Then comes a space, the name of your function, an open parenthesis, the comma-separated input parameters for your function, a close parenthesis, and a colon. Here's what a function signature looks like for a function that takes no arguments:
 
+> At least one student tried typing in these function signatures alone (without a body) and got confused when they produced an error.  Perhaps change it to something like
+~~~
+def myFunction():
+    # Your code would go here!
+    pass
+~~~
+
 `def myFunction():`
 
 Here's what a function signature looks like for a function that takes one argument called my_string:
@@ -584,9 +591,12 @@ What do you think will happen here?  Try it and see:
 ~~~
 def half_number(x):
     print(x/2)
+
 half1 = half_number(20)
 print(half1)
 ~~~
+
+> Put a line break above, since it's necessary in the repl
 
 That's it for this evening! Now you can take some time to try some of the [practice exercises](http://phillypythonworkshop.github.io/practice/) and review anything here that seemed challenging.  We'll review all this and get deeper into Python during Saturday's presentation.
 
