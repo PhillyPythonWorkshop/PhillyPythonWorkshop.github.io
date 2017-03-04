@@ -48,11 +48,11 @@ This ensures that when you hit the Tab button on your keyboard, your text editor
 Python 3.4.0 (default, Apr 11 2014, 13:05:11)
 [GCC 4.8.2] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> 
+>>>
 ~~~
 
 * The `>>>` indicates that you are at a Python prompt.
-* Exit the Python prompt by typing `exit()` and hitting enter. 
+* Exit the Python prompt by typing `exit()` and hitting enter.
 * Practice doing this a few times until you are comfortable entering and exiting the Python shell.
 
 
@@ -120,14 +120,14 @@ Answer these questions. Experiment at the command line if you need to! If you ar
 #### Success!
 You've practiced using dir and cd to navigate your computer's filesystem from the command prompt.
 
-#Start learning Python!
+# Start learning Python!
 Go through this [self-directed tutorial](/fridaytutorial/) to start learning to read and write in Python. These concepts will be reviewed in the Saturday lesson, along with some more advanced topics.
 
 # Get dependencies installed for the projects
 
 Download the [Wordplay Project](https://github.com/PhillyPythonWorkshop/Wordplay/archive/master.zip).
 
-Download the [Colorwall Project](https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip) for Python 3.  
+Download the [Colorwall Project](https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip) for Python 3.
 
 # Practice
 Try some [practice exercises](/practice/).  If you've been working on any other tutorials, feel free to go to those too, and ask an instructor to help anywhere you get stuck.
