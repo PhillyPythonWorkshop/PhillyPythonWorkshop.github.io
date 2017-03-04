@@ -368,7 +368,7 @@ Type 4 spaces, and then type `print("Six is greater than five!")`. Hit `enter` t
 
 ~~~
 >>> if 6 > 5:
-...      print "Six is greater than five!"
+...      print("Six is greater than five!")
 Six is greater than five!
 ~~~
 
