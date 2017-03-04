@@ -101,12 +101,12 @@ This displays the full directory path to your current directory, /home.
 `ls`
 This lists the contents of the root directory, confirming where you are.
 
-####Tips
+#### Tips
 
 You can use Tab to auto-complete directory and file names. So from inside the root directory /, if you type cd ho and hit Tab, the command prompt will auto-complete the directory name, and you can then hit enter to change into the /home directory.
 The command prompt maintains a command history. You can use the up arrow to cycle through old commands.
 
-####Check your understanding
+#### Check your understanding
 
 Answer these questions. Experiment at the command line if you need to! If you aren't sure about an answer, ask a helper.
 
@@ -129,8 +129,8 @@ Download the [Wordplay Project](https://github.com/PhillyPythonWorkshop/Wordplay
 
 Download the [Colorwall Project](https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip) for Python 3.  
 
-#Practice
+# Practice
 Try some [practice exercises](/practice/).  If you've been working on any other tutorials, feel free to go to those too, and ask an instructor to help anywhere you get stuck.
 
-#Checkoff
+# Checkoff
 Have an instructor or assistant [check you off](/fridaycheckoff/).
