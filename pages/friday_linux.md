@@ -6,11 +6,11 @@ permalink: /frisetuplinux/
 
 Here's what you need to do to set up your Linux machine.
 
-#Download and Install Python
+# Download and Install Python
 
 Most Linux machines have both Python 2 and Python 3 pre-installed.  Open a Terminal window and type `python3` at the prompt.  You should see something like the example in the Python shell section below.  If you don't, please see an instructor.
 
-#Prepare a text editor
+# Prepare a text editor
 
 While you can absolutely write python code in any text editor, it is a lot easier to use one that is aware of code content and provides relevant features. To that end, we'll be using Sublime Text 3. While there are a multitude of other options, Sublime 3 provides a good blend of simplicity and functionality.
 
@@ -39,7 +39,7 @@ Be sure that you've set tabs equal to 4 spaces and the tabs to spaces setting is
 This ensures that when you hit the Tab button on your keyboard, your text editor will do the equivalent of typing four spaces.
 
 
-#Practice starting & exiting the Python shell
+# Practice starting & exiting the Python shell
 
 * Open a command prompt.
 * To start Python, type `python3` at the command prompt and hit enter. You should see something like
@@ -56,7 +56,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 * Practice doing this a few times until you are comfortable entering and exiting the Python shell.
 
 
-#Practice navigating the computer from a command prompt
+# Practice navigating the computer from a command prompt
 
 The filesystem on your computer is like a tree made up of folders (also called "directories") and files. The filesystem has a root directory called `/`, and everything on your computer lives in subdirectories of this root directory.
 We often navigate the filesystem graphically by clicking on graphical folders. We can do the exact same navigation from the command line.
@@ -123,7 +123,7 @@ You've practiced using dir and cd to navigate your computer's filesystem from th
 #Start learning Python!
 Go through this [self-directed tutorial](/fridaytutorial/) to start learning to read and write in Python. These concepts will be reviewed in the Saturday lesson, along with some more advanced topics.
 
-#Get dependencies installed for the projects
+# Get dependencies installed for the projects
 
 Download the [Wordplay Project](https://github.com/PhillyPythonWorkshop/Wordplay/archive/master.zip).
 
