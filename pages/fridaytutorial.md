@@ -381,6 +381,9 @@ In this case, because 6 really is greater than 5, Python executes the code block
 ~~~
 if 0 > 2:
      print("Zero is greater than two!")
+~~~
+
+~~~
 if "banana" in "bananarama":
     print("I miss the 80s.")
 ~~~
